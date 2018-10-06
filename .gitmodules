@@ -1,0 +1,6 @@
+[submodule "themes/natrium"]
+	path = themes/natrium
+	url = git@github.com:mobybit/hugo-natrium-theme.git
+[submodule "themes/hugo-easy-gallery"]
+	path = themes/hugo-easy-gallery
+	url = git@github.com:liwenyip/hugo-easy-gallery.git
