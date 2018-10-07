@@ -6,7 +6,7 @@ before_install:
   - chmod 0400 deploy_key
 
 install:
-  - sudo apt-get --yes install snapd
+  - travis_wait sudo apt-get --yes install snapd
   - sudo snap install hugo
 
 before_script:
