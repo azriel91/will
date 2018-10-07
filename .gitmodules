@@ -4,3 +4,6 @@
 [submodule "themes/hugo-easy-gallery"]
 	path = themes/hugo-easy-gallery
 	url = git@github.com:liwenyip/hugo-easy-gallery.git
+[submodule "themes/beautifulhugo"]
+	path = themes/beautifulhugo
+	url = git@github.com:halogenica/beautifulhugo.git

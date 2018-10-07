@@ -1,16 +1,19 @@
 baseURL = "https://azriel.im/"
 languageCode = "en-us"
 title = "Will"
-theme = ["natrium", "hugo-easy-gallery"]
-
+theme = ["beautifulhugo", "hugo-easy-gallery"]
 enableEmoji = true
-# googleAnalytics = "UA-122495090-1"
-
+canonifyURLs = true
 preserveTaxonomyNames = true
 rssLimit = 10
 paginate = 10
+summaryLength = 33
 pygmentsCodefences = true
-pygmentsStyle = "native"
+# pygmentsUseClasses = true
+# pygmentsCodefencesGuessSyntax = true
+pygmentsStyle = "fruity"
+
+googleAnalytics = "UA-122495090-1"
 
 [taxonomies]
   category = "categories"
@@ -35,14 +38,29 @@ pygmentsStyle = "native"
   url = "/categories"
   weight = -130
 
-[params]
-  description = ""
+[Params]
+  homeTitle = "Will"
+  subtitle = "2.5D Action/Adventure PC Game"
+  logo = "img/will_logo.png"
+  favicon = "img/favicon.ico"
+  dateFormat = "2006-01-02"
+  commit = false
+  rss = true
+  comments = true
+  readingTime = false
+  useHLJS = false
+  socialShare = true
+  gcse = "001170321302850785855:ikbend5xmbo" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 
-  [params.logo]
-  url = "will_logo.png"
-  width = 50
-  height = 50
-  alt = "Will"
+[Author]
+  name = "Azriel Hoh"
+  website = "https://azriel.im/"
+  email = "mail@azriel.im"
+  github = "azriel91"
+  # twitter = "im_azriel"
+  # reddit = "azrielh"
+  # youtube = "user/azriel91"
+  # itchio = "azriel91"
 
 [outputs]
   post = ["HTML"]
