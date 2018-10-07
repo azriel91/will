@@ -9,8 +9,6 @@ rssLimit = 10
 paginate = 10
 summaryLength = 33
 pygmentsCodefences = true
-# pygmentsUseClasses = true
-# pygmentsCodefencesGuessSyntax = true
 pygmentsStyle = "fruity"
 
 googleAnalytics = "UA-122495090-1"
@@ -20,7 +18,7 @@ googleAnalytics = "UA-122495090-1"
   tag = "tags"
 
 [permalinks]
-  post = "/:slug/"
+  post = "/:year/:month/:day/:slug/"
   page = "/:slug/"
 
 [[menu.main]]
@@ -40,7 +38,7 @@ googleAnalytics = "UA-122495090-1"
 
 [Params]
   homeTitle = "Will"
-  subtitle = "2.5D Action/Adventure PC Game"
+  subtitle = "2.5D Action/Adventure Game"
   logo = "img/will_logo.png"
   favicon = "img/favicon.ico"
   dateFormat = "2006-01-02"
@@ -49,7 +47,7 @@ googleAnalytics = "UA-122495090-1"
   comments = true
   readingTime = false
   useHLJS = false
-  socialShare = true
+  socialShare = false
   gcse = "001170321302850785855:ikbend5xmbo" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 
 [Author]
