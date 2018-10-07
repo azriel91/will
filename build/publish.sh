@@ -26,7 +26,7 @@ echo "Removing existing files"
 rm -rf public/*
 
 echo "Generating site"
-hugo || /snap/bin/hugo
+hugo
 
 echo "Updating gh-pages branch"
 (
