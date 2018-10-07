@@ -1,9 +1,9 @@
 [submodule "themes/natrium"]
 	path = themes/natrium
-	url = git@github.com:mobybit/hugo-natrium-theme.git
+	url = https://github.com/mobybit/hugo-natrium-theme.git
 [submodule "themes/hugo-easy-gallery"]
 	path = themes/hugo-easy-gallery
-	url = git@github.com:liwenyip/hugo-easy-gallery.git
+	url = https://github.com/liwenyip/hugo-easy-gallery.git
 [submodule "themes/beautifulhugo"]
 	path = themes/beautifulhugo
-	url = git@github.com:halogenica/beautifulhugo.git
+	url = https://github.com/halogenica/beautifulhugo.git
