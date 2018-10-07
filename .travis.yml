@@ -6,7 +6,8 @@ before_install:
   - chmod 0400 deploy_key
 
 install:
-  - sudo apt-get install hugo
+  - sudo apt-get --yes install snapd
+  - sudo snap install hugo
 
 before_script:
   - echo -e "Host github.com\n  IdentityFile ${TRAVIS_BUILD_DIR}/deploy_key\n" > ~/.ssh/config
