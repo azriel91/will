@@ -1,14 +1,14 @@
 sudo: true
 dist: trusty
 
-before_install:
-  - openssl aes-256-cbc -K $encrypted_b7cdc4440a66_key -iv $encrypted_b7cdc4440a66_iv -in deploy_key.enc -out ./deploy_key -d
-  - chmod 0400 deploy_key
-
 cache:
   directories:
     - "${TARGET_BIN_DIR}"
     - "${TARGET_DOWNLOAD_DIR}"
+
+before_install:
+  - openssl aes-256-cbc -K $encrypted_b7cdc4440a66_key -iv $encrypted_b7cdc4440a66_iv -in deploy_key.enc -out ./deploy_key -d
+  - chmod 0400 deploy_key
 
 install:
   - mkdir -p "${TARGET_BIN_DIR}"

@@ -34,7 +34,7 @@ echo "Updating gh-pages branch"
   git add --all &&
   git commit -m "Publishing to gh-pages"
 
-  git push -u origin gh-pages -f
+  git push git@github.com:azriel91/will.git gh-pages -f
 )
 
 
