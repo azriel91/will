@@ -1,8 +1,8 @@
 ---
 title     : "Don't Go Too Far"
 date      : 2018-08-31T00:01:44+12:00
-categories: ["Post"]
-tags      : ["Development"]
+categories: ["post"]
+tags      : ["development"]
 ---
 
 {{< load-photoswipe >}}

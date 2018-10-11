@@ -1,8 +1,8 @@
 ---
 title     : "Humble Beginnings"
 date      : 2018-04-27T08:34:54+12:00
-categories: ["Post"]
-tags      : ["Development"]
+categories: ["post"]
+tags      : ["development"]
 ---
 
 {{< load-photoswipe >}}

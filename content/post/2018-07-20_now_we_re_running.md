@@ -1,8 +1,8 @@
 ---
 title     : "Now We're Running"
 date      : 2018-07-20T08:52:37+12:00
-categories: ["Post"]
-tags      : ["Development"]
+categories: ["post"]
+tags      : ["development"]
 ---
 
 Depending on the situation, you may or may not want to hear, "It moved. It's alive!" In this case, it's a good thing. Characters now can walk, run, and jump.
