@@ -18,8 +18,9 @@ Okay! So what's new? In order of appearance in the video:
 * A (very basic) character selection screen.
 * Animated map background.
 * Map boundaries.
-* XZ movement while jumping [as promised]({{ site.baseurl }}{% post_url 2018-07-20-now-we-re-running %}#play)
+* XZ movement while jumping [as promised]({{< ref "/post/2018-07-20_now_we_re_running.md#play" >}})
 * Multiple players.
+
 
 ### Character Selection Screen
 
