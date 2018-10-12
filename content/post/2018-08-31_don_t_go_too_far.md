@@ -5,8 +5,6 @@ categories: ["post"]
 tags      : ["development"]
 ---
 
-{{< load-photoswipe >}}
-
 *"Excuse me. Come back!"* said every game developer, ever. It's an all too familiar cry when a character runs out of screen into the vast empty space of nothingness. This update brings in map layers and boundaries, as well as a number of invisible improvements to speed up future development.
 
 ## Play

@@ -5,8 +5,6 @@ categories: ["post"]
 tags      : ["development"]
 ---
 
-{{< load-photoswipe >}}
-
 What does it look like, when something begins with nothing? It's exactly how you imagine it &mdash; nothing. Then something takes shape. It's been 12 weeks since I began development on Will. Here's a look at where it's at.
 
 ## Play

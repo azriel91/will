@@ -9,11 +9,11 @@ Depending on the situation, you may or may not want to hear, "It moved. It's ali
 
 ## Play
 
-{{< figure src="/img/2018-07-20_now_we_re_running/walk_run.gif" >}}
+{{< figure src="/img/2018-07-20_now_we_re_running/walk_run.gif" caption="Walk and run" >}}
 
 Press left / right to walk; or double tap and hold to run. When stopping, there is a little delay before the character returns to the standing sequence.
 
-{{< figure src="/img/2018-07-20_now_we_re_running/jump.gif" >}}
+{{< figure src="/img/2018-07-20_now_we_re_running/jump.gif" caption="Jump" >}}
 
 Press jump to jump. Currently there is no movement in the X or Z directions; this will be included in the next update.
 
