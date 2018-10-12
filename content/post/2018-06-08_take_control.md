@@ -5,7 +5,9 @@ categories: ["post"]
 tags      : ["development"]
 ---
 
-This update adds support for controller input and sequence switching for characters. It also changes the syntax in object configuration for declaring sequences. It's a small update as I had just under 3 weeks to work on this.
+This update adds support for controller input and sequence switching for characters.
+
+It also changes the syntax in object configuration for declaring sequences. It's a small update as I had just under 3 weeks to work on this.
 
 ## Play
 

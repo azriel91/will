@@ -7,7 +7,7 @@ canonifyURLs = true
 preserveTaxonomyNames = true
 rssLimit = 10
 paginate = 10
-summaryLength = 33
+summaryLength = 44
 pygmentsCodefences = true
 pygmentsStyle = "fruity"
 
