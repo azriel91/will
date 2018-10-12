@@ -1,6 +1,6 @@
 [submodule "themes/hugo-easy-gallery"]
 	path = themes/hugo-easy-gallery
-	url = https://github.com/liwenyip/hugo-easy-gallery.git
+	url = https://github.com/azriel91/hugo-easy-gallery.git
 [submodule "themes/beautifulhugo"]
 	path = themes/beautifulhugo
 	url = https://github.com/azriel91/beautifulhugo.git
