@@ -1,7 +1,7 @@
 baseURL = "https://azriel.im/will"
 languageCode = "en-us"
 title = "Will"
-theme = ["beautifulhugo", "hugo-easy-gallery"]
+theme = ["hugo-easy-gallery", "beautifulhugo"]
 enableEmoji = true
 canonifyURLs = true
 preserveTaxonomyNames = true
