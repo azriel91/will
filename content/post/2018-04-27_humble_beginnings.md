@@ -9,7 +9,7 @@ What does it look like, when something begins with nothing? It's exactly how you
 
 ## Play
 
-{{< figure src="/img/2018-04-27_humble_beginnings/preview.gif" caption="Static menu and animated sprites" >}}
+{{< figure src="/media/2018-04-27_humble_beginnings/preview.gif" caption="Static menu and animated sprites" >}}
 
 Right now, Will is simply a menu that clicks through to an animated sprite sequence.
 
@@ -27,8 +27,8 @@ For objects to fit together, the artwork should not only look good, but also be 
 
 So, about this guy:
 
-{{< figure src="/img/2018-04-27_humble_beginnings/sprite.gif" alt="Example character &mdash; Heat &mdash; standing next to a bat." >}}
-{{< figure src="/img/2018-04-27_humble_beginnings/heat_standing.png" alt="Sprites for Heat's standing animation." >}}
+{{< figure src="/media/2018-04-27_humble_beginnings/sprite.gif" alt="Example character &mdash; Heat &mdash; standing next to a bat." >}}
+{{< figure src="/media/2018-04-27_humble_beginnings/heat_standing.png" alt="Sprites for Heat's standing animation." >}}
 
 The sprites for this character, Heat, were drawn by Apocalipsis, for one of my previous attempts at making this game. Heat may or may not be part of the final game, as I haven't settled on the art style for Will.
 

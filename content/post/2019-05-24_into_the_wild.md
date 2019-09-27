@@ -154,10 +154,10 @@ Currently, because control transitions are specified per *frame*, if you have 4 
 
 ### Spriting
 
-{{< figure src="/img/2019-05-24_into_the_wild/heat_stand_attack.png" caption="Stand attack" >}}  
-{{< figure src="/img/2019-05-24_into_the_wild/heat_jump_attack.png" caption="Jump attack" >}}  
-{{< figure src="/img/2019-05-24_into_the_wild/heat_dash_attack.png" caption="Dash attack" >}}  
-{{< figure src="/img/2019-05-24_into_the_wild/heat_dazed.png" caption="Dazed" >}}  
+{{< figure src="/media/2019-05-24_into_the_wild/heat_stand_attack.png" caption="Stand attack" >}}  
+{{< figure src="/media/2019-05-24_into_the_wild/heat_jump_attack.png" caption="Jump attack" >}}  
+{{< figure src="/media/2019-05-24_into_the_wild/heat_dash_attack.png" caption="Dash attack" >}}  
+{{< figure src="/media/2019-05-24_into_the_wild/heat_dazed.png" caption="Dazed" >}}  
 
 There are now two sequences for stand attack to make the movement appear more natural, and characters can now attack while jumping and dashing.
 

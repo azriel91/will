@@ -11,7 +11,7 @@ It also changes the syntax in object configuration for declaring sequences. It's
 
 ## Play
 
-{{< figure src="/img/2018-06-08_take_control/control_input.gif" caption="Characters now transition from standing to walking upon controller input. This includes movement on both the X axis and Z axis." >}}
+{{< figure src="/media/2018-06-08_take_control/control_input.gif" caption="Characters now transition from standing to walking upon controller input. This includes movement on both the X axis and Z axis." >}}
 
 *That's it?*  
 Yeap!

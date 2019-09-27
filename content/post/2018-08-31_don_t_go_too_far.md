@@ -58,8 +58,8 @@ Map backgrounds and boundaries can now be defined, and there's a small breaking 
 In the above clip, the background images in the *Eruption* map are created by Blue Phoenix and Alectric from the Little Fighter 2 world. These are single screen large images, but you can also create parts of the background with smaller images and combine them together.
 
 {{< gallery caption-effect="fade" >}}
-{{< figure src="/img/2018-08-31_don_t_go_too_far/ground.png" caption="Ground" >}}
-{{< figure src="/img/2018-08-31_don_t_go_too_far/sky.png" caption="Sky" >}}
+{{< figure src="/media/2018-08-31_don_t_go_too_far/ground.png" caption="Ground" >}}
+{{< figure src="/media/2018-08-31_don_t_go_too_far/sky.png" caption="Sky" >}}
 {{< /gallery >}}
 
 ### Scripting

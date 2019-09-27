@@ -38,7 +38,7 @@ When an object is hit, we need to give it a hurt animation. For characters, ther
 
 The following sprite sheet shows the sprites used in these sequences:
 
-{{< figure src="/img/2018-11-23_where_the_fun_begins/heat_interaction.png" caption="heat_interaction.png" alt="Sprites used when a character is hit." >}}
+{{< figure src="/media/2018-11-23_where_the_fun_begins/heat_interaction.png" caption="heat_interaction.png" alt="Sprites used when a character is hit." >}}
 
 The corresponding object configuration is as follows:
 

@@ -20,9 +20,9 @@ The new version can be downloaded on [itch.io](https://azriel91.itch.io/will).
 ### Charging
 
 <div>
-<span style="display: inline-block;">{{< figure src="/img/2019-08-16_charging_up/charge_0.png" caption="Charging" >}}</span>
-<span style="display: inline-block;">{{< figure src="/img/2019-08-16_charging_up/charge_1.png" caption="Buster 1" >}}</span>
-<span style="display: inline-block;">{{< figure src="/img/2019-08-16_charging_up/charge_2.png" caption="Buster 2" >}}</span>
+<span style="display: inline-block;">{{< figure src="/media/2019-08-16_charging_up/charge_0.png" caption="Charging" >}}</span>
+<span style="display: inline-block;">{{< figure src="/media/2019-08-16_charging_up/charge_1.png" caption="Buster 1" >}}</span>
+<span style="display: inline-block;">{{< figure src="/media/2019-08-16_charging_up/charge_2.png" caption="Buster 2" >}}</span>
 </div>
 
 Characters can now execute different attacks based on how many *charge points* they have. How charge points are used differs depending on the character:
@@ -114,12 +114,12 @@ charge_retention_mode = "never"
 ### Spriting
 
 <div>
-<span style="display: inline-block;">{{< figure src="/img/2019-08-16_charging_up/rox_outline.gif" caption="Outline" >}}</span>
-<span style="display: inline-block;">{{< figure src="/img/2019-08-16_charging_up/rox_colour.gif" caption="Colour" >}}</span>
-<span style="display: inline-block;">{{< figure src="/img/2019-08-16_charging_up/rox_shaded.gif" caption="Shaded" >}}</span>
-<span style="display: inline-block;">{{< figure src="/img/2019-08-16_charging_up/buster_shot_weak.gif" caption="Buster Shot Weak" >}}</span>
-<span style="display: inline-block;">{{< figure src="/img/2019-08-16_charging_up/buster_shot_mid.gif" caption="Buster Shot Mid" >}}</span>
-<span style="display: inline-block;">{{< figure src="/img/2019-08-16_charging_up/buster_shot_strong.gif" caption="Buster Shot Strong" >}}</span>
+<span style="display: inline-block;">{{< figure src="/media/2019-08-16_charging_up/rox_outline.gif" caption="Outline" >}}</span>
+<span style="display: inline-block;">{{< figure src="/media/2019-08-16_charging_up/rox_colour.gif" caption="Colour" >}}</span>
+<span style="display: inline-block;">{{< figure src="/media/2019-08-16_charging_up/rox_shaded.gif" caption="Shaded" >}}</span>
+<span style="display: inline-block;">{{< figure src="/media/2019-08-16_charging_up/buster_shot_weak.gif" caption="Buster Shot Weak" >}}</span>
+<span style="display: inline-block;">{{< figure src="/media/2019-08-16_charging_up/buster_shot_mid.gif" caption="Buster Shot Mid" >}}</span>
+<span style="display: inline-block;">{{< figure src="/media/2019-08-16_charging_up/buster_shot_strong.gif" caption="Buster Shot Strong" >}}</span>
 </div>
 
 There aren't any new sequence IDs in this update, but it's still fun to create new moves. The above character sprites and buster shots were made using [aseprite](https://www.aseprite.org/). It costs US $15, but it's well worth it.

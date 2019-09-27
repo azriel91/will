@@ -23,7 +23,7 @@ The new version can be downloaded on [itch.io](https://azriel91.itch.io/will).
 
 ### Energy Spawning
 
-{{< figure src="/img/2019-07-05_this_is_lit/spawn_energy.png" caption="Energy spawning" >}}
+{{< figure src="/media/2019-07-05_this_is_lit/spawn_energy.png" caption="Energy spawning" >}}
 
 Energy objects are now spawnable in game, expanding game play possibilities. This is one step towards enabling:
 
@@ -126,7 +126,7 @@ Multiple `spawns` may be specified to spawn multiple objects.
 
 ### Spriting
 
-{{< figure src="/img/2019-07-05_this_is_lit/fireball.png" caption="Fireball" >}}
+{{< figure src="/media/2019-07-05_this_is_lit/fireball.png" caption="Fireball" >}}
 
 Energy objects, like characters, need multiple sprites to form an aesthetic animation. The spritesheet above shows two sprites used during the `hover` sequence, and 4 sprites used during the `hit` and `hitting` sequences.
 
