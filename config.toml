@@ -39,8 +39,8 @@ googleAnalytics = "UA-122495090-1"
 [Params]
   homeTitle = "Will"
   subtitle = "2.5D Action/Adventure Game"
-  logo = "img/will_logo.png"
-  favicon = "img/favicon.ico"
+  logo = "media/will_logo.png"
+  favicon = "media/favicon.ico"
   dateFormat = "2006-01-02"
   commit = false
   rss = true
