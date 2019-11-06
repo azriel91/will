@@ -28,7 +28,7 @@ env:
   global:
   - GIT_NAME=azriel91
   - GIT_EMAIL=azriel91@gmail.com
-  - HUGO_VERSION=0.54.0
+  - HUGO_VERSION=0.59.1
   - TARGET_DIR="${TRAVIS_BUILD_DIR}/target"
   - TARGET_BIN_DIR="${TARGET_DIR}/bin"
   - TARGET_DOWNLOAD_DIR="${TARGET_DIR}/download"
