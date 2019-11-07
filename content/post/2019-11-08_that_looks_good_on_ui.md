@@ -35,7 +35,7 @@ The new version can be downloaded on [itch.io](https://azriel91.itch.io/will).
 
 {{< figure src="/media/2019-11-08_that_looks_good_on_ui/winner_status.png" caption="The winning player is indicated when the game ends." >}}
 
-When the game ends, the winer will be displayed.
+When the game ends, the winner will be displayed.
 
 ## Create
 
