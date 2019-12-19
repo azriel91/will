@@ -70,8 +70,8 @@ The following user interfaces are (now) mostly defined by configuration:
 For the curious, feel free to edit the various YAML files in the `assets/default/ui/*` directories. The following example shows how to change the pulse colour when the character selection is confirmed, from green to purple:
 
 <div>
-<span style="display: inline-block;">{{< figure src="/media/2019-12-20_i_see_the_character_in_ui/pulse_green.gif" caption="Breathing animation for Rox." >}}</span>
-<span style="display: inline-block;">{{< figure src="/media/2019-12-20_i_see_the_character_in_ui/pulse_purple.gif" caption="Flinch animation for Rox." >}}</span>
+<span style="display: inline-block;">{{< figure src="/media/2019-12-20_i_see_the_character_in_ui/pulse_green.gif" caption="Animation with green tint." >}}</span>
+<span style="display: inline-block;">{{< figure src="/media/2019-12-20_i_see_the_character_in_ui/pulse_purple.gif" caption="Animation with purple tint." >}}</span>
 </div>
 
 Change the tint from this:
