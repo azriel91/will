@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Focus! - Will</title>
+  <meta name="description" content="👁️ Eyes on me. Let&rsquo;s go.
+ This update contains many improvements to game play and configuration.
+  What&rsquo;s new:
+ Camera moves to track players, whilst staying within map bounds. Play sounds from object configuration. Spawn any kind of object, on any sequence.">
+  <meta name="author" content="Azriel Hoh"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Will",
+    
+    "url": "https:\/\/azriel.im\/will"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/azriel.im\/will"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/azriel.im\/will",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/azriel.im\/will\/2019\/09\/27\/focus\/",
+          "name": "Focus!"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Azriel Hoh"
+  },
+  "headline": "Focus!",
+  "description" : "👁️ Eyes on me. Let\x26rsquo;s go.\n This update contains many improvements to game play and configuration.\n  What\x26rsquo;s new:\n Camera moves to track players, whilst staying within map bounds. Play sounds from object configuration. Spawn any kind of object, on any sequence.",
+  "inLanguage" : "en",
+  "wordCount":  689 ,
+  "datePublished" : "2019-09-27T06:50:26",
+  "dateModified" : "2019-09-27T06:50:26",
+  "image" : "https:\/\/azriel.im\/will\/media\/will_logo.png",
+  "keywords" : [ "development, release" ],
+  "mainEntityOfPage" : "https:\/\/azriel.im\/will\/2019\/09\/27\/focus\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/azriel.im\/will",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/azriel.im\/will\/media\/will_logo.png",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Focus!" />
+<meta property="og:description" content="👁️ Eyes on me. Let&rsquo;s go.
+ This update contains many improvements to game play and configuration.
+  What&rsquo;s new:
+ Camera moves to track players, whilst staying within map bounds. Play sounds from object configuration. Spawn any kind of object, on any sequence.">
+<meta property="og:image" content="https://azriel.im/will/media/will_logo.png" />
+<meta property="og:url" content="https://azriel.im/will/2019/09/27/focus/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Will" />
+
+  <meta name="twitter:title" content="Focus!" />
+  <meta name="twitter:description" content="👁️ Eyes on me. Let&rsquo;s go.
+ This update contains many improvements to game play and configuration.
+  What&rsquo;s new:
+ Camera moves to track players, whilst staying within map bounds. Play sounds …">
+  <meta name="twitter:image" content="https://azriel.im/will/media/will_logo.png" />
+  <meta name="twitter:card" content="summary" />
+  <link href='https://azriel.im/will/media/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.59.1" />
+  <link rel="alternate" href="https://azriel.im/will/index.xml" type="application/rss+xml" title="Will"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://azriel.im/will/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="https://azriel.im/will/css/syntax.css" /><link rel="stylesheet" href="https://azriel.im/will/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-122495090-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://azriel.im/will">Will</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Categories" href="https://azriel.im/will/categories">Categories</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="https://azriel.im/will/tags">Tags</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="https://azriel.im/will/about/">About</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="glyphicon glyphicon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="Will" href="https://azriel.im/will">
+            <img class="avatar-img" src="https://azriel.im/will/media/will_logo.png" alt="Will" />
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search Will</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>Focus!</h1>
+              
+              
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on 2019-09-27
+  
+  
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Azriel Hoh
+    
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<blockquote>
+<p>👁️ Eyes on me. Let&rsquo;s go.</p>
+</blockquote>
+
+<p>This update contains many improvements to game play and configuration.</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/JOZ9RiCFzdA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<p>What&rsquo;s new:</p>
+
+<ul>
+<li>Camera moves to track players, whilst staying within map bounds.</li>
+<li>Play sounds from object configuration.</li>
+<li>Spawn any kind of object, on any sequence.</li>
+<li>Transfer momentum when hit.</li>
+</ul>
+
+<p>Configuration has the following changes:</p>
+
+<ul>
+<li>Markup language has switched from TOML to YAML.</li>
+<li>Acceleration for objects can be specified.</li>
+<li>Arbitrary sequence names can be used.</li>
+<li>Spawn position and velocity configuration use named axes.</li>
+</ul>
+
+<p>The new version can be downloaded on <a href="https://azriel91.itch.io/will">itch.io</a>.</p>
+
+<h2 id="play">Play</h2>
+
+<h3 id="camera-tracking-on-wide-maps">Camera Tracking On Wide Maps</h3>
+
+<p>
+<link rel="stylesheet" href="https://azriel.im/will/css/hugo-easy-gallery.css" />
+<div class="box fancy-figure caption-position-bottom caption-effect-fade" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="https://azriel.im/will/media/2019-09-27_focus/camera_face_left.png" alt="Camera shifted towards left."/>
+    </div>
+    <a href="https://azriel.im/will/media/2019-09-27_focus/camera_face_left.png" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>Camera shifted towards left.</p>
+      </figcaption>
+  </figure>
+</div>
+
+
+
+<div class="box fancy-figure caption-position-bottom caption-effect-fade" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="https://azriel.im/will/media/2019-09-27_focus/camera_middle.png" alt="Camera centered between tracked players."/>
+    </div>
+    <a href="https://azriel.im/will/media/2019-09-27_focus/camera_middle.png" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>Camera centered between tracked players.</p>
+      </figcaption>
+  </figure>
+</div>
+
+
+
+<div class="box fancy-figure caption-position-bottom caption-effect-fade" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="https://azriel.im/will/media/2019-09-27_focus/camera_face_right.png" alt="Camera shifted towards right."/>
+    </div>
+    <a href="https://azriel.im/will/media/2019-09-27_focus/camera_face_right.png" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>Camera shifted towards right.</p>
+      </figcaption>
+  </figure>
+</div>
+</p>
+
+<p>On maps with a play area larger than the window, the game camera will follow the players. It will also be weighted towards the direction that players are facing.</p>
+
+<h3 id="hit-momentum">Hit Momentum</h3>
+
+<p>
+
+<div class="box fancy-figure caption-position-bottom caption-effect-fade" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="https://azriel.im/will/media/2019-09-27_focus/momentum_weak.png" alt="Weak shot does not transfer much momentum."/>
+    </div>
+    <a href="https://azriel.im/will/media/2019-09-27_focus/momentum_weak.png" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>Weak shot does not transfer much momentum.</p>
+      </figcaption>
+  </figure>
+</div>
+
+
+
+<div class="box fancy-figure caption-position-bottom caption-effect-fade" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="https://azriel.im/will/media/2019-09-27_focus/momentum_mid.png" alt="Medium shot transfers more momentum."/>
+    </div>
+    <a href="https://azriel.im/will/media/2019-09-27_focus/momentum_mid.png" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>Medium shot transfers more momentum.</p>
+      </figcaption>
+  </figure>
+</div>
+</p>
+
+<p>When hit, acceleration will be applied to objects &ndash; weak attacks will only move objects a little; strong attacks will knock them further.</p>
+
+<h2 id="create">Create</h2>
+
+<h3 id="configuration">Configuration</h3>
+
+<h4 id="markup-language">Markup Language</h4>
+
+<p>The markup language has been switched from TOML to YAML. This reduces repetition of key names for hierarchical data.</p>
+
+<ul>
+<li><p>TOML:</p>
+
+<div class="highlight"><div style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[sequences.stand]
+  next = <span style="color:#0086d2">&#34;repeat&#34;</span>
+
+  [sequences.stand.transitions.press_attack]
+    next = <span style="color:#0086d2">&#34;stand_attack_weak&#34;</span>
+
+  [[sequences.stand.transitions.release_attack]]
+    next = <span style="color:#0086d2">&#34;stand_attack_strong&#34;</span>
+    requirements = [{ charge = <span style="color:#0086f7;font-weight:bold">40</span> }]
+
+  [[sequences.stand.transitions.release_attack]]
+    next = <span style="color:#0086d2">&#34;stand_attack_mid&#34;</span>
+    requirements = [{ charge = <span style="color:#0086f7;font-weight:bold">13</span> }]
+
+  [[sequences.stand.frames]]
+    wait = <span style="color:#0086f7;font-weight:bold">8</span>
+    sprite = { sheet = <span style="color:#0086f7;font-weight:bold">0</span>, index = <span style="color:#0086f7;font-weight:bold">0</span> }
+    body = [{ box = { x = <span style="color:#0086f7;font-weight:bold">16</span>, y = <span style="color:#0086f7;font-weight:bold">10</span>, w = <span style="color:#0086f7;font-weight:bold">28</span>, h = <span style="color:#0086f7;font-weight:bold">53</span> } }]
+    </code></pre></td></tr></table>
+</div>
+</div></li>
+
+<li><p>YAML:</p>
+
+<div class="highlight"><div style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">sequences:<span style="color:#888">
+</span><span style="color:#888">  </span>stand:<span style="color:#888">
+</span><span style="color:#888">    </span>next:<span style="color:#888"> </span><span style="color:#0086d2">&#34;repeat&#34;</span><span style="color:#888">
+</span><span style="color:#888">    </span>transitions:<span style="color:#888">
+</span><span style="color:#888">      </span>press_attack:<span style="color:#888"> </span>{<span style="color:#888"> </span>next:<span style="color:#888"> </span><span style="color:#0086d2">&#34;stand_attack_weak&#34;</span><span style="color:#888"> </span>}<span style="color:#888">
+</span><span style="color:#888">      </span>release_attack:<span style="color:#888">
+</span><span style="color:#888">        </span>-<span style="color:#888"> </span>next:<span style="color:#888"> </span><span style="color:#0086d2">&#34;stand_attack_strong&#34;</span><span style="color:#888">
+</span><span style="color:#888">          </span>requirements:<span style="color:#888"> </span>[{<span style="color:#888"> </span>charge:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">40</span><span style="color:#888"> </span>}]<span style="color:#888">
+</span><span style="color:#888">        </span>-<span style="color:#888"> </span>next:<span style="color:#888"> </span><span style="color:#0086d2">&#34;stand_attack_mid&#34;</span><span style="color:#888">
+</span><span style="color:#888">          </span>requirements:<span style="color:#888"> </span>[{<span style="color:#888"> </span>charge:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">13</span><span style="color:#888"> </span>}]<span style="color:#888">
+</span><span style="color:#888">
+</span><span style="color:#888">    </span>frames:<span style="color:#888">
+</span><span style="color:#888">      </span>-<span style="color:#888"> </span>wait:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">8</span><span style="color:#888">
+</span><span style="color:#888">        </span>sprite:<span style="color:#888"> </span>{<span style="color:#888"> </span>sheet:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">0</span>,<span style="color:#888"> </span>index:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">0</span><span style="color:#888"> </span>}<span style="color:#888">
+</span><span style="color:#888">        </span>body:<span style="color:#888"> </span>[{<span style="color:#888"> </span>box:<span style="color:#888"> </span>{<span style="color:#888"> </span>x:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">16</span>,<span style="color:#888"> </span>y:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">10</span>,<span style="color:#888"> </span>w:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">28</span>,<span style="color:#888"> </span>h:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">53</span><span style="color:#888"> </span>}<span style="color:#888"> </span>}]<span style="color:#888">
+</span><span style="color:#888">    </span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+
+<h4 id="additions">Additions</h4>
+
+<ul>
+<li><p>Sound can be specified per frame:</p>
+
+<div class="highlight"><div style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">sequences:<span style="color:#888">
+</span><span style="color:#888">  </span>run:<span style="color:#888">
+</span><span style="color:#888">    </span><span style="color:#080;background-color:#0f140f;font-style:italic"># ..</span><span style="color:#888">
+</span><span style="color:#888">    </span>frames:<span style="color:#888">
+</span><span style="color:#888">      </span>-<span style="color:#888"> </span>wait:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">2</span><span style="color:#888">
+</span><span style="color:#888">        </span>sound:<span style="color:#888"> </span><span style="color:#0086d2">&#34;default/object/character/rox/rox_run.wav&#34;</span><span style="color:#888">
+</span><span style="color:#888">        </span><span style="color:#080;background-color:#0f140f;font-style:italic"># ..</span><span style="color:#888">
+</span><span style="color:#888">    </span></code></pre></td></tr></table>
+</div>
+</div></li>
+
+<li><p>Any kind of object can be spawned, on specified sequence:</p>
+
+<div class="highlight"><div style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#080;background-color:#0f140f;font-style:italic"># rox/object.yaml</span><span style="color:#888">
+</span><span style="color:#888"></span>spawns:<span style="color:#888">
+</span><span style="color:#888">  </span>-<span style="color:#888"> </span>object:<span style="color:#888"> </span><span style="color:#0086d2">&#34;default/rox&#34;</span><span style="color:#888">      </span><span style="color:#080;background-color:#0f140f;font-style:italic"># Spawns a Rox character.</span><span style="color:#888">
+</span><span style="color:#888">    </span>position:<span style="color:#888"> </span>{<span style="color:#888"> </span>x:<span style="color:#888"> </span>-<span style="color:#0086f7;font-weight:bold">20</span>,<span style="color:#888"> </span>y:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">0</span><span style="color:#888"> </span>}<span style="color:#888"> </span><span style="color:#080;background-color:#0f140f;font-style:italic"># Position of the spawned object relative to this object.</span><span style="color:#888">
+</span><span style="color:#888">    </span>velocity:<span style="color:#888"> </span>{<span style="color:#888"> </span>z:<span style="color:#888"> </span>-<span style="color:#0086f7;font-weight:bold">20</span><span style="color:#888"> </span>}<span style="color:#888">       </span><span style="color:#080;background-color:#0f140f;font-style:italic"># Velocity of the spawned object relative to this object.</span><span style="color:#888">
+</span><span style="color:#888">    </span>sequence:<span style="color:#888"> </span><span style="color:#0086d2">&#34;run_clone&#34;</span><span style="color:#888">      </span><span style="color:#080;background-color:#0f140f;font-style:italic"># Spawned character begins on the &#34;run_clone&#34; sequence.</span><span style="color:#888">
+</span><span style="color:#888">    </span></code></pre></td></tr></table>
+</div>
+</div></li>
+
+<li><p>Object acceleration to the object:</p>
+
+<div class="highlight"><div style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">sequences:<span style="color:#888">
+</span><span style="color:#888">  </span>run:<span style="color:#888">
+</span><span style="color:#888">    </span>next:<span style="color:#888"> </span><span style="color:#0086d2">&#34;repeat&#34;</span><span style="color:#888">
+</span><span style="color:#888">
+</span><span style="color:#888">    </span><span style="color:#080;background-color:#0f140f;font-style:italic"># Sequence level acceleration -- applied to all frames.</span><span style="color:#888">
+</span><span style="color:#888">    </span>acceleration:<span style="color:#888">
+</span><span style="color:#888">      </span><span style="color:#080;background-color:#0f140f;font-style:italic"># Apply the acceleration continuously in the frame.</span><span style="color:#888">
+</span><span style="color:#888">      </span>kind:<span style="color:#888"> </span><span style="color:#0086d2">&#34;continuous&#34;</span><span style="color:#888">
+</span><span style="color:#888">      </span>x:<span style="color:#888"> </span>{<span style="color:#888"> </span>multiplier:<span style="color:#888"> </span><span style="color:#0086d2">&#34;x_axis&#34;</span>,<span style="color:#888"> </span>value:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">6.0</span><span style="color:#888"> </span>}<span style="color:#888"> </span><span style="color:#080;background-color:#0f140f;font-style:italic"># Multiply the value with X axis input.</span><span style="color:#888">
+</span><span style="color:#888">      </span>z:<span style="color:#888"> </span>{<span style="color:#888"> </span>multiplier:<span style="color:#888"> </span><span style="color:#0086d2">&#34;z_axis&#34;</span>,<span style="color:#888"> </span>value:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">1.5</span><span style="color:#888"> </span>}<span style="color:#888"> </span><span style="color:#080;background-color:#0f140f;font-style:italic"># Multiply the value with Z axis input.</span><span style="color:#888">
+</span><span style="color:#888">
+</span><span style="color:#888">    </span>frames:<span style="color:#888">
+</span><span style="color:#888">      </span>-<span style="color:#888"> </span>wait:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">2</span><span style="color:#888">
+</span><span style="color:#888">        </span><span style="color:#080;background-color:#0f140f;font-style:italic"># Override the sequence level acceleration for this frame.</span><span style="color:#888">
+</span><span style="color:#888">        </span>acceleration:<span style="color:#888">
+</span><span style="color:#888">          </span>kind:<span style="color:#888"> </span><span style="color:#0086d2">&#34;once&#34;</span><span style="color:#888"> </span><span style="color:#080;background-color:#0f140f;font-style:italic"># Apply the acceleration at the beginning of the frame.</span><span style="color:#888">
+</span><span style="color:#888">          </span>x:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">8.0</span><span style="color:#888">       </span><span style="color:#080;background-color:#0f140f;font-style:italic"># Use the acceleration value as is.</span><span style="color:#888">
+</span><span style="color:#888">        </span><span style="color:#080;background-color:#0f140f;font-style:italic"># ..</span><span style="color:#888">
+</span><span style="color:#888">    </span></code></pre></td></tr></table>
+</div>
+</div></li>
+
+<li><p>Hit interactions inflict acceleration:</p>
+
+<div class="highlight"><div style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">interactions:<span style="color:#888">
+</span><span style="color:#888">  </span><span style="color:#080;background-color:#0f140f;font-style:italic"># Hit object velocity increases by 10 units to the right, and 5 units upwards.</span><span style="color:#888">
+</span><span style="color:#888">  </span>-<span style="color:#888"> </span>hit:<span style="color:#888"> </span>{<span style="color:#888"> </span>acceleration:<span style="color:#888"> </span>{<span style="color:#888"> </span>x:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">10</span>,<span style="color:#888"> </span>y:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">5</span><span style="color:#888"> </span>},<span style="color:#888"> </span>..<span style="color:#888"> </span>}<span style="color:#888">
+</span><span style="color:#888">    </span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+
+<h3 id="spriting">Spriting</h3>
+
+<div>
+<span style="display: inline-block;">
+
+<div class="box fancy-figure caption-position-bottom caption-effect-fade" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="https://azriel.im/will/media/2019-09-27_focus/rox_walk.gif" alt="Walk"/>
+    </div>
+    <a href="https://azriel.im/will/media/2019-09-27_focus/rox_walk.gif" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>Walk</p>
+      </figcaption>
+  </figure>
+</div>
+</span>
+<span style="display: inline-block;">
+
+<div class="box fancy-figure caption-position-bottom caption-effect-fade" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="https://azriel.im/will/media/2019-09-27_focus/rox_run.gif" alt="Run"/>
+    </div>
+    <a href="https://azriel.im/will/media/2019-09-27_focus/rox_run.gif" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>Run</p>
+      </figcaption>
+  </figure>
+</div>
+</span>
+<span style="display: inline-block;">
+
+<div class="box fancy-figure caption-position-bottom caption-effect-fade" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="https://azriel.im/will/media/2019-09-27_focus/rox_jump.gif" alt="Jump"/>
+    </div>
+    <a href="https://azriel.im/will/media/2019-09-27_focus/rox_jump.gif" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>Jump</p>
+      </figcaption>
+  </figure>
+</div>
+</span>
+</div>
+
+<p>This time sprites added to Rox to test the new features &ndash; though not strictly necessary, it&rsquo;s useful to see sprites that represent actions that a feature is built for. The above sprites are made using <a href="https://www.aseprite.org/">aseprite</a>.</p>
+
+<h3 id="sound-effects">Sound Effects</h3>
+
+
+
+<div class="box fancy-figure caption-position-bottom caption-effect-fade" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="https://azriel.im/will/media/2019-09-27_focus/buster_shot_weak_wav.png" alt="Buster Shot Weak sound wave"/>
+    </div>
+    <a href="https://azriel.im/will/media/2019-09-27_focus/buster_shot_weak_wav.png" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>Buster Shot Weak sound wave</p>
+      </figcaption>
+  </figure>
+</div>
+
+
+<p>The sound effects for Rox&rsquo;s run, and buster shots &ndash; all 3 charge levels &ndash; are voice recordings, and edited using <a href="https://www.audacityteam.org/">Audacity</a>. Yeap, I was making <em>&ldquo;pew!&rdquo;</em> and <em>&ldquo;wsshhhh&rdquo;</em> sounds in my room.</p>
+
+<h3 id="new-moves">New Moves</h3>
+
+
+
+<div class="box fancy-figure caption-position-bottom caption-effect-fade" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="https://azriel.im/will/media/2019-09-27_focus/rox_clone_attack.png" alt="Rox clone attack"/>
+    </div>
+    <a href="https://azriel.im/will/media/2019-09-27_focus/rox_clone_attack.png" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>Rox clone attack</p>
+      </figcaption>
+  </figure>
+</div>
+
+
+<p>With arbitrary sequence IDs added, new behaviours can easily be added to objects. The above move is defined with the following (trimmed) configuration:</p>
+
+<div class="highlight"><div style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">sequences:<span style="color:#888">
+</span><span style="color:#888">  </span>run_attack_clone:<span style="color:#888">
+</span><span style="color:#888">    </span><span style="color:#080;background-color:#0f140f;font-style:italic"># ..</span><span style="color:#888">
+</span><span style="color:#888">
+</span><span style="color:#888">    </span>frames:<span style="color:#888">
+</span><span style="color:#888">      </span>-<span style="color:#888"> </span><span style="color:#080;background-color:#0f140f;font-style:italic"># ..</span><span style="color:#888">
+</span><span style="color:#888">        </span>spawns:<span style="color:#888">
+</span><span style="color:#888">          </span>-<span style="color:#888"> </span>{<span style="color:#888"> </span>object:<span style="color:#888"> </span><span style="color:#0086d2">&#34;default/rox&#34;</span>,<span style="color:#888"> </span>position:<span style="color:#888"> </span>{<span style="color:#888"> </span>x:<span style="color:#888"> </span>-<span style="color:#0086f7;font-weight:bold">20</span><span style="color:#888"> </span>},<span style="color:#888"> </span>velocity:<span style="color:#888"> </span>{<span style="color:#888"> </span>z:<span style="color:#888"> </span>-<span style="color:#0086f7;font-weight:bold">20</span><span style="color:#888"> </span>},<span style="color:#888"> </span>sequence:<span style="color:#888"> </span><span style="color:#0086d2">&#34;run_clone&#34;</span><span style="color:#888"> </span>}<span style="color:#888">
+</span><span style="color:#888">          </span>-<span style="color:#888"> </span>{<span style="color:#888"> </span>object:<span style="color:#888"> </span><span style="color:#0086d2">&#34;default/rox&#34;</span>,<span style="color:#888"> </span>position:<span style="color:#888"> </span>{<span style="color:#888"> </span>x:<span style="color:#888"> </span>-<span style="color:#0086f7;font-weight:bold">10</span><span style="color:#888"> </span>},<span style="color:#888"> </span>velocity:<span style="color:#888"> </span>{<span style="color:#888"> </span>z:<span style="color:#888"> </span>-<span style="color:#0086f7;font-weight:bold">10</span><span style="color:#888"> </span>},<span style="color:#888"> </span>sequence:<span style="color:#888"> </span><span style="color:#0086d2">&#34;run_clone&#34;</span><span style="color:#888"> </span>}<span style="color:#888">
+</span><span style="color:#888">          </span>-<span style="color:#888"> </span>{<span style="color:#888"> </span>object:<span style="color:#888"> </span><span style="color:#0086d2">&#34;default/rox&#34;</span>,<span style="color:#888"> </span>position:<span style="color:#888"> </span>{<span style="color:#888"> </span>x:<span style="color:#888"> </span>-<span style="color:#0086f7;font-weight:bold">10</span><span style="color:#888"> </span>},<span style="color:#888"> </span>velocity:<span style="color:#888"> </span>{<span style="color:#888"> </span>z:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">10</span><span style="color:#888"> </span>},<span style="color:#888"> </span>sequence:<span style="color:#888"> </span><span style="color:#0086d2">&#34;run_clone&#34;</span><span style="color:#888"> </span>}<span style="color:#888">
+</span><span style="color:#888">          </span>-<span style="color:#888"> </span>{<span style="color:#888"> </span>object:<span style="color:#888"> </span><span style="color:#0086d2">&#34;default/rox&#34;</span>,<span style="color:#888"> </span>position:<span style="color:#888"> </span>{<span style="color:#888"> </span>x:<span style="color:#888"> </span>-<span style="color:#0086f7;font-weight:bold">20</span><span style="color:#888"> </span>},<span style="color:#888"> </span>velocity:<span style="color:#888"> </span>{<span style="color:#888"> </span>z:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">20</span><span style="color:#888"> </span>},<span style="color:#888"> </span>sequence:<span style="color:#888"> </span><span style="color:#0086d2">&#34;run_clone&#34;</span><span style="color:#888"> </span>}<span style="color:#888">
+</span><span style="color:#888">
+</span><span style="color:#888">  </span>run_clone:<span style="color:#888">
+</span><span style="color:#888">    </span>next:<span style="color:#888"> </span><span style="color:#0086d2">&#34;delete&#34;</span><span style="color:#888">
+</span><span style="color:#888">    </span>acceleration:<span style="color:#888">
+</span><span style="color:#888">      </span>kind:<span style="color:#888"> </span><span style="color:#0086d2">&#34;continuous&#34;</span><span style="color:#888">
+</span><span style="color:#888">      </span>x:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">8.0</span><span style="color:#888">
+</span><span style="color:#888">
+</span><span style="color:#888">    </span>frames:<span style="color:#888">
+</span><span style="color:#888">      </span>-<span style="color:#888"> </span>wait:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">20</span><span style="color:#888">
+</span><span style="color:#888">        </span>sprite:<span style="color:#888"> </span>{<span style="color:#888"> </span>sheet:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">0</span>,<span style="color:#888"> </span>index:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">13</span><span style="color:#888"> </span>}<span style="color:#888">
+</span><span style="color:#888">      </span>-<span style="color:#888"> </span>wait:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">10</span><span style="color:#888">
+</span><span style="color:#888">        </span>sprite:<span style="color:#888"> </span>{<span style="color:#888"> </span>sheet:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">0</span>,<span style="color:#888"> </span>index:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">13</span><span style="color:#888"> </span>}<span style="color:#888">
+</span><span style="color:#888">        </span>spawns:<span style="color:#888">
+</span><span style="color:#888">          </span>-<span style="color:#888"> </span>object:<span style="color:#888"> </span><span style="color:#0086d2">&#34;default/buster_shot_weak&#34;</span><span style="color:#888">
+</span><span style="color:#888">            </span>position:<span style="color:#888"> </span>{<span style="color:#888"> </span>x:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">22</span>,<span style="color:#888"> </span>y:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">33</span><span style="color:#888"> </span>}<span style="color:#888">
+</span><span style="color:#888">            </span>velocity:<span style="color:#888"> </span>{<span style="color:#888"> </span>x:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">10</span>,<span style="color:#888"> </span>y:<span style="color:#888"> </span><span style="color:#0086f7;font-weight:bold">0</span><span style="color:#888"> </span>}</code></pre></td></tr></table>
+</div>
+</div>
+
+<h2 id="what-s-next">What&rsquo;s Next</h2>
+
+<p>Yay, both the arbitrary sequence IDs and kinematics in configuration items have been implemented, and a lot more than that. The next period will focus on:</p>
+
+<ul>
+<li>Better menus / user interfaces.</li>
+<li>Better code maintenance.</li>
+</ul>
+
+<p><em>Just those two?</em></p>
+
+<p>Yeap. It takes a lot of effort to make a good <em>menu</em>; code maintenance needs substantial work &ndash; this last development cycle traded maintainability for functionality. Until then.</p>
+
+<h2 id="support-me">Support Me</h2>
+
+<p>The game is still in development; if you would like to support me, please consider becoming a <a href="https://www.patreon.com/azriel91">Patron</a>.</p>
+
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://azriel.im/will/tags/development/">development</a>&nbsp;
+            
+              <a href="https://azriel.im/will/tags/release/">release</a>&nbsp;
+            
+          </div>
+        
+
+        
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://azriel.im/will/2019/08/16/charging-up/" data-toggle="tooltip" data-placement="top" title="Charging Up">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://azriel.im/will/2019/10/08/dev-time-optimization-part-1-1.9x-speedup-65-less-disk-usage/" data-toggle="tooltip" data-placement="top" title="Dev Time Optimization -- Part 1 (1.9x speedup, 65% less disk usage)">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:mail@azriel.im" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/azriel91" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://azriel.im/">Azriel Hoh</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2020
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://azriel.im/will">Will</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.59.1</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://azriel.im/will/js/main.js"></script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://azriel.im/will/js/load-photoswipe.js"></script>
+
+
+
+<script>
+  (function() {
+    var cx = '001170321302850785855:ikbend5xmbo';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+

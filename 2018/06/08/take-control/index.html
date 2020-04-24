@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Take Control - Will</title>
+  <meta name="description" content="This update adds support for controller input and sequence switching for characters.
+It also changes the syntax in object configuration for declaring sequences. It&rsquo;s a small update as I had just under 3 weeks to work on this.
+Play    Characters now transition from standing to walking upon controller input.">
+  <meta name="author" content="Azriel Hoh"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Will",
+    
+    "url": "https:\/\/azriel.im\/will"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/azriel.im\/will"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/azriel.im\/will",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/azriel.im\/will\/2018\/06\/08\/take-control\/",
+          "name": "Take control"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Azriel Hoh"
+  },
+  "headline": "Take Control",
+  "description" : "This update adds support for controller input and sequence switching for characters.\nIt also changes the syntax in object configuration for declaring sequences. It\x26rsquo;s a small update as I had just under 3 weeks to work on this.\nPlay    Characters now transition from standing to walking upon controller input.",
+  "inLanguage" : "en",
+  "wordCount":  339 ,
+  "datePublished" : "2018-06-08T21:13:52",
+  "dateModified" : "2018-06-08T21:13:52",
+  "image" : "https:\/\/azriel.im\/will\/media\/will_logo.png",
+  "keywords" : [ "development" ],
+  "mainEntityOfPage" : "https:\/\/azriel.im\/will\/2018\/06\/08\/take-control\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/azriel.im\/will",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/azriel.im\/will\/media\/will_logo.png",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Take Control" />
+<meta property="og:description" content="This update adds support for controller input and sequence switching for characters.
+It also changes the syntax in object configuration for declaring sequences. It&rsquo;s a small update as I had just under 3 weeks to work on this.
+Play    Characters now transition from standing to walking upon controller input.">
+<meta property="og:image" content="https://azriel.im/will/media/will_logo.png" />
+<meta property="og:url" content="https://azriel.im/will/2018/06/08/take-control/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Will" />
+
+  <meta name="twitter:title" content="Take Control" />
+  <meta name="twitter:description" content="This update adds support for controller input and sequence switching for characters.
+It also changes the syntax in object configuration for declaring sequences. It&rsquo;s a small update as I had just …">
+  <meta name="twitter:image" content="https://azriel.im/will/media/will_logo.png" />
+  <meta name="twitter:card" content="summary" />
+  <link href='https://azriel.im/will/media/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.59.1" />
+  <link rel="alternate" href="https://azriel.im/will/index.xml" type="application/rss+xml" title="Will"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://azriel.im/will/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="https://azriel.im/will/css/syntax.css" /><link rel="stylesheet" href="https://azriel.im/will/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-122495090-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://azriel.im/will">Will</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Categories" href="https://azriel.im/will/categories">Categories</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="https://azriel.im/will/tags">Tags</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="https://azriel.im/will/about/">About</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="glyphicon glyphicon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="Will" href="https://azriel.im/will">
+            <img class="avatar-img" src="https://azriel.im/will/media/will_logo.png" alt="Will" />
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search Will</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>Take Control</h1>
+              
+              
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on 2018-06-08
+  
+  
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Azriel Hoh
+    
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<p>This update adds support for controller input and sequence switching for characters.</p>
+
+<p>It also changes the syntax in object configuration for declaring sequences. It&rsquo;s a small update as I had just under 3 weeks to work on this.</p>
+
+<h2 id="play">Play</h2>
+
+
+<link rel="stylesheet" href="https://azriel.im/will/css/hugo-easy-gallery.css" />
+<div class="box fancy-figure caption-position-bottom caption-effect-fade" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="https://azriel.im/will/media/2018-06-08_take_control/control_input.gif" alt="Characters now transition from standing to walking upon controller input. This includes movement on both the X axis and Z axis."/>
+    </div>
+    <a href="https://azriel.im/will/media/2018-06-08_take_control/control_input.gif" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>Characters now transition from standing to walking upon controller input. This includes movement on both the X axis and Z axis.</p>
+      </figcaption>
+  </figure>
+</div>
+
+
+<p><em>That&rsquo;s it?</em><br />
+Yeap!</p>
+
+<p><em>Wait, that&rsquo;s how you answered last time.</em><br />
+It was, but it takes quite a lot of work to do small things.</p>
+
+<p>Right now, the controller configuration looks like this:</p>
+<div class="highlight"><pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#080;background-color:#0f140f;font-style:italic">// For a list of key codes, see &lt;https://docs.rs/winit/0.13.1/winit/enum.VirtualKeyCode.html&gt;
+</span><span style="color:#080;background-color:#0f140f;font-style:italic"></span>(<span style="color:#888">
+</span><span style="color:#888">    </span>axes: {<span style="color:#888">
+</span><span style="color:#888">        </span><span style="color:#080;background-color:#0f140f;font-style:italic">// Players are numbered using zero based indices, so player &#34;one&#34; is 0
+</span><span style="color:#080;background-color:#0f140f;font-style:italic"></span><span style="color:#888">        </span>(player: <span style="color:#0086f7;font-weight:bold">0</span>,<span style="color:#888"> </span>axis: X): (pos: Key(Right),<span style="color:#888"> </span>neg: Key(Left)),<span style="color:#888">
+</span><span style="color:#888">        </span>(player: <span style="color:#0086f7;font-weight:bold">0</span>,<span style="color:#888"> </span>axis: Z): (pos: Key(Down),<span style="color:#888"> </span>neg: Key(Up)),<span style="color:#888">
+</span><span style="color:#888">    </span>},<span style="color:#888">
+</span><span style="color:#888">    </span>actions: {<span style="color:#888">
+</span><span style="color:#888">        </span>(player: <span style="color:#0086f7;font-weight:bold">0</span>,<span style="color:#888"> </span>action: Defend): [Key(O)],<span style="color:#888">
+</span><span style="color:#888">        </span>(player: <span style="color:#0086f7;font-weight:bold">0</span>,<span style="color:#888"> </span>action: Jump): [Key(P)],<span style="color:#888">
+</span><span style="color:#888">        </span>(player: <span style="color:#0086f7;font-weight:bold">0</span>,<span style="color:#888"> </span>action: Attack): [Key(LBracket)],<span style="color:#888">
+</span><span style="color:#888">        </span>(player: <span style="color:#0086f7;font-weight:bold">0</span>,<span style="color:#888"> </span>action: Special): [Key(RBracket)],<span style="color:#888">
+</span><span style="color:#888">    </span>},<span style="color:#888">
+</span><span style="color:#888"></span>)<span style="color:#888">
+</span></code></pre></div>
+<p>It is structured so that more controllers can be defined, though currently only for keyboard controllers. You can also see that there are four action buttons. Those who have played Little Fighter 2 or Hero Fighter will find these familiar.</p>
+
+<h2 id="create">Create</h2>
+
+<h3 id="scripting">Scripting</h3>
+
+<p>Character sequences have now changed. Previously sequences were written like this:</p>
+
+<div class="highlight"><div style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[[sequences]]
+  id = <span style="color:#0086d2">&#34;Standing&#34;</span>
+  next = <span style="color:#0086d2">&#34;Standing&#34;</span>
+  frames = [
+    <span style="color:#080;background-color:#0f140f;font-style:italic"># ...</span>
+  ]
+
+[[sequences]]
+  id = <span style="color:#0086d2">&#34;Walking&#34;</span>
+  next = <span style="color:#0086d2">&#34;Standing&#34;</span>
+  frames = [
+    <span style="color:#080;background-color:#0f140f;font-style:italic"># ...</span>
+  ]</code></pre></td></tr></table>
+</div>
+</div>
+
+<p>In this update, the sequence ID is now lowercase<sup>1</sup>, no longer ends with &ldquo;-ing&rdquo;, and are put into single square brackets:</p>
+
+<div class="highlight"><div style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[sequences.stand]
+  next = <span style="color:#0086d2">&#34;stand&#34;</span>
+  frames = [
+    <span style="color:#080;background-color:#0f140f;font-style:italic"># ...</span>
+  ]
+
+[sequences.walk]
+  next = <span style="color:#0086d2">&#34;stand&#34;</span>
+  frames = [
+    <span style="color:#080;background-color:#0f140f;font-style:italic"># ...</span>
+  ]</code></pre></td></tr></table>
+</div>
+</div>
+
+<p><sup>1</sup> <sub>Strictly speaking, the game uses <em>snake_case</em>. This is a programming term to describe lower cased words separated by underscores &ldquo;<code>_</code>&rdquo;. Since there are currently just single word IDs, it just looks like lowercase.</sub></p>
+
+<h2 id="what-s-next">What&rsquo;s Next</h2>
+
+<p>So the &ldquo;reading controller input&rdquo; half is done, next time we should be able to move the character around.</p>
+
+<p>Onwards!</p>
+
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://azriel.im/will/tags/development/">development</a>&nbsp;
+            
+          </div>
+        
+
+        
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://azriel.im/will/2018/04/27/humble-beginnings/" data-toggle="tooltip" data-placement="top" title="Humble Beginnings">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://azriel.im/will/2018/07/20/now-were-running/" data-toggle="tooltip" data-placement="top" title="Now We&#39;re Running">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:mail@azriel.im" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/azriel91" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://azriel.im/">Azriel Hoh</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2020
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://azriel.im/will">Will</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.59.1</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://azriel.im/will/js/main.js"></script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://azriel.im/will/js/load-photoswipe.js"></script>
+
+
+
+<script>
+  (function() {
+    var cx = '001170321302850785855:ikbend5xmbo';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Intermission - Will</title>
+  <meta name="description" content="Response to the call for Rust 2019 Roadmap blog posts
+Things I would like prioritized in the 2019 roadmap.
+ Reduced Compilation Times Refined Tools  Reduced Compilation Times This is echoed in many existing 2019 blog posts, so instead of detailing the pain, here is a list of the relief / joy this would bring:">
+  <meta name="author" content="Azriel Hoh"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Will",
+    
+    "url": "https:\/\/azriel.im\/will"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/azriel.im\/will"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/azriel.im\/will",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/azriel.im\/will\/2018\/12\/18\/intermission\/",
+          "name": "Intermission"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Azriel Hoh"
+  },
+  "headline": "Intermission",
+  "description" : "Response to the call for Rust 2019 Roadmap blog posts\nThings I would like prioritized in the 2019 roadmap.\n Reduced Compilation Times Refined Tools  Reduced Compilation Times This is echoed in many existing 2019 blog posts, so instead of detailing the pain, here is a list of the relief \/ joy this would bring:",
+  "inLanguage" : "en",
+  "wordCount":  433 ,
+  "datePublished" : "2018-12-18T11:31:13",
+  "dateModified" : "2018-12-18T11:31:13",
+  "image" : "https:\/\/azriel.im\/will\/media\/will_logo.png",
+  "keywords" : [ "rust" ],
+  "mainEntityOfPage" : "https:\/\/azriel.im\/will\/2018\/12\/18\/intermission\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/azriel.im\/will",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/azriel.im\/will\/media\/will_logo.png",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Intermission" />
+<meta property="og:description" content="Response to the call for Rust 2019 Roadmap blog posts
+Things I would like prioritized in the 2019 roadmap.
+ Reduced Compilation Times Refined Tools  Reduced Compilation Times This is echoed in many existing 2019 blog posts, so instead of detailing the pain, here is a list of the relief / joy this would bring:">
+<meta property="og:image" content="https://azriel.im/will/media/will_logo.png" />
+<meta property="og:url" content="https://azriel.im/will/2018/12/18/intermission/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Will" />
+
+  <meta name="twitter:title" content="Intermission" />
+  <meta name="twitter:description" content="Response to the call for Rust 2019 Roadmap blog posts
+Things I would like prioritized in the 2019 roadmap.
+ Reduced Compilation Times Refined Tools  Reduced Compilation Times This is echoed in many …">
+  <meta name="twitter:image" content="https://azriel.im/will/media/will_logo.png" />
+  <meta name="twitter:card" content="summary" />
+  <link href='https://azriel.im/will/media/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.59.1" />
+  <link rel="alternate" href="https://azriel.im/will/index.xml" type="application/rss+xml" title="Will"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://azriel.im/will/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="https://azriel.im/will/css/syntax.css" /><link rel="stylesheet" href="https://azriel.im/will/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-122495090-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://azriel.im/will">Will</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Categories" href="https://azriel.im/will/categories">Categories</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="https://azriel.im/will/tags">Tags</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="https://azriel.im/will/about/">About</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="glyphicon glyphicon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="Will" href="https://azriel.im/will">
+            <img class="avatar-img" src="https://azriel.im/will/media/will_logo.png" alt="Will" />
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search Will</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>Intermission</h1>
+              
+              
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on 2018-12-18
+  
+  
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Azriel Hoh
+    
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<p><em>Response to the <a href="https://blog.rust-lang.org/2018/12/06/call-for-rust-2019-roadmap-blogposts.html">call for Rust 2019 Roadmap blog posts</a></em></p>
+
+<p>Things I would like prioritized in the 2019 roadmap.</p>
+
+<ul>
+<li>Reduced Compilation Times</li>
+<li>Refined Tools</li>
+</ul>
+
+<h2 id="reduced-compilation-times">Reduced Compilation Times</h2>
+
+<p>This is echoed in many existing 2019 blog posts, so instead of detailing the pain, here is a list of the relief / joy this would bring:</p>
+
+<ul>
+<li><p><strong>Development Experience:</strong></p>
+
+<p>Quicker &ldquo;red-green-refactor&rdquo; development cycle.</p></li>
+
+<li><p><strong>Quality:</strong></p>
+
+<p>Less impedence in running a large suite of tests results in smaller, more comprehensible changes.</p></li>
+</ul>
+
+<h2 id="refined-tools">Refined Tools</h2>
+
+<ul>
+<li><p><strong>Tidy:</strong></p>
+
+<p>Rust artifacts are ever growing. My disk space does not. It would be nice to have automatic clean up of unused files:</p>
+
+<ul>
+<li>Stale compilation artifacts.</li>
+<li>Old versions of crates in <code>~/.cargo/{registry, git}</code>.</li>
+</ul>
+
+<p>Perhaps deleting based on last access time, and different clean-up profiles for development, CI would solve this.</p></li>
+
+<li><p><strong>Brave:</strong></p>
+
+<p>There are many times Rust provides hints that could be automatically applied without needing human decision.</p>
+
+<ul>
+<li><p><strong>Automatically managed imports:</strong></p>
+
+<p>Java does this well, though I know Rust has more variants to manage &ndash; crate groupings, style.</p>
+
+<p>Sometimes the suggestions are incomplete, though it&rsquo;s not clear why &ndash; types from the same module export are not consistently listed / unlisted.</p></li>
+
+<li><p><strong>Lints:</strong></p>
+
+<p>Extra <code>&amp;</code>, unnecessary <code>clone()</code>? By all means, remove them.</p></li>
+</ul>
+
+<p>Cargo fix is already quite brave, and deserves a million applauds. Allowing more tools to change code without explicit prodding could organically induce coding best practices.</p></li>
+
+<li><p><strong>Refactoring:</strong></p>
+
+<p>There are times I&rsquo;d like to change a method signature, add or split a parameter, or move a module. For a single-developer project that follows strict conventions, regex is possible, but is nonetheless fragile. There are some moments where I&rsquo;d miss mature IDE support that is available with languages such as Java.</p>
+
+<p>Quite confident that the <a href="https://github.com/rust-lang/rls">RLS</a> will get there, the question is how soon, and whether we remember &ldquo;let&rsquo;s support this in cargo workspaces too!&rdquo;.</p></li>
+
+<li><p><strong>Less Hungry:</strong></p>
+
+<p>Normally I like things that are intense. High CPU, memory, and I/O usage are not among those things. Rust compilation and <a href="https://github.com/rust-lang/rls">RLS</a> tend to be hungry enough that, for a cold start, my (Windows) machine becomes unresponsive to do any text editing, and my machine isn&rsquo;t all that weak. Linux experience tends to be better.</p>
+
+<p>There are additional tools that support software maintenance such as <a href="https://github.com/kbknapp/cargo-outdated"><code>cargo-outdated</code></a> and <a href="https://crates.io/crates/cargo-tarpaulin"><code>cargo-tarpaulin</code></a>. However, for a small-medium repository (~28k LOC), these run out of memory (16 GB) and crash, and it isn&rsquo;t possible to realize their value.</p>
+
+<p>Diverting some attention to the efficiency of these existing tools would ease the work in the quality aspect of the Rust ecosystem.</p></li>
+</ul>
+
+<p>Wishlist is not explicitly game-dev focused, but game-dev will certainly benefit from all of these enhancements.</p>
+
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://azriel.im/will/tags/rust/">rust</a>&nbsp;
+            
+          </div>
+        
+
+        
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://azriel.im/will/2018/11/23/where-the-fun-begins/" data-toggle="tooltip" data-placement="top" title="Where The Fun Begins">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://azriel.im/will/2019/01/04/as-if-nothing-ever-happened/" data-toggle="tooltip" data-placement="top" title="As If Nothing Ever Happened">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:mail@azriel.im" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/azriel91" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://azriel.im/">Azriel Hoh</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2020
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://azriel.im/will">Will</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.59.1</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://azriel.im/will/js/main.js"></script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://azriel.im/will/js/load-photoswipe.js"></script>
+
+
+
+<script>
+  (function() {
+    var cx = '001170321302850785855:ikbend5xmbo';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Will</title>
+    <link>https://azriel.im/will/tags/</link>
+    <description>Recent content in Tags on Will</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mail@azriel.im (Azriel Hoh)</managingEditor>
+    <webMaster>mail@azriel.im (Azriel Hoh)</webMaster>
+    <lastBuildDate>Fri, 24 Apr 2020 15:44:22 +1200</lastBuildDate>
+    
+	<atom:link href="https://azriel.im/will/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>development</title>
+      <link>https://azriel.im/will/tags/development/</link>
+      <pubDate>Fri, 24 Apr 2020 15:44:22 +1200</pubDate>
+      <author>mail@azriel.im (Azriel Hoh)</author>
+      <guid>https://azriel.im/will/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>release</title>
+      <link>https://azriel.im/will/tags/release/</link>
+      <pubDate>Fri, 24 Apr 2020 15:44:22 +1200</pubDate>
+      <author>mail@azriel.im (Azriel Hoh)</author>
+      <guid>https://azriel.im/will/tags/release/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rust</title>
+      <link>https://azriel.im/will/tags/rust/</link>
+      <pubDate>Tue, 18 Dec 2018 11:31:13 +1300</pubDate>
+      <author>mail@azriel.im (Azriel Hoh)</author>
+      <guid>https://azriel.im/will/tags/rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plan</title>
+      <link>https://azriel.im/will/tags/plan/</link>
+      <pubDate>Sat, 24 Mar 2018 19:22:50 +1300</pubDate>
+      <author>mail@azriel.im (Azriel Hoh)</author>
+      <guid>https://azriel.im/will/tags/plan/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

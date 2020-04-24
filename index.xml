@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Will</title>
+    <link>https://azriel.im/will/</link>
+    <description>Recent content on Will</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>mail@azriel.im (Azriel Hoh)</managingEditor>
+    <webMaster>mail@azriel.im (Azriel Hoh)</webMaster>
+    <lastBuildDate>Fri, 24 Apr 2020 15:44:22 +1200</lastBuildDate>
+    
+	<atom:link href="https://azriel.im/will/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Browsers! Assemble</title>
+      <link>https://azriel.im/will/2020/04/24/browsers-assemble/</link>
+      <pubDate>Fri, 24 Apr 2020 15:44:22 +1200</pubDate>
+      <author>mail@azriel.im (Azriel Hoh)</author>
+      <guid>https://azriel.im/will/2020/04/24/browsers-assemble/</guid>
+      <description>⏳ Time for a break.. ..unless?
+ Overview You can play online, while playing online1 🎮.
+  The desktop version can be downloaded on itch.io.
+The web version is not yet published as it only runs on Chrome on Linux; on Windows it crashes while loading.</description>
+    </item>
+    
+    <item>
+      <title>Join Me</title>
+      <link>https://azriel.im/will/2020/03/13/join-me/</link>
+      <pubDate>Fri, 13 Mar 2020 15:18:01 +1300</pubDate>
+      <author>mail@azriel.im (Azriel Hoh)</author>
+      <guid>https://azriel.im/will/2020/03/13/join-me/</guid>
+      <description>A dev/ops engineer builds a game
+..and a session server
+..and a cloudformation stack1
+🔌 Let&amp;rsquo;s connect! 🌐
+ In brief:
+ Online play now exists, but games go out of sync. Will is now open source I&amp;rsquo;ll work on WASM support in Amethyst for 6 weeks, then likely have a break from this project.</description>
+    </item>
+    
+    <item>
+      <title>Designing Network Play</title>
+      <link>https://azriel.im/will/2020/02/29/designing-network-play/</link>
+      <pubDate>Sat, 29 Feb 2020 23:33:44 +1300</pubDate>
+      <author>mail@azriel.im (Azriel Hoh)</author>
+      <guid>https://azriel.im/will/2020/02/29/designing-network-play/</guid>
+      <description>📡 A simple session server is an online hash map. 🗺️
+ This post goes through the design process for implementing network play in Will.
+It&amp;rsquo;s my first time implementing a networked game, so design improvements certainly can be made.
+Usage Scenario From players&amp;rsquo; perspective, one game client will host a session, and other players join that session.</description>
+    </item>
+    
+    <item>
+      <title>I Choose UI</title>
+      <link>https://azriel.im/will/2020/01/31/i-choose-ui/</link>
+      <pubDate>Fri, 31 Jan 2020 00:13:01 +1300</pubDate>
+      <author>mail@azriel.im (Azriel Hoh)</author>
+      <guid>https://azriel.im/will/2020/01/31/i-choose-ui/</guid>
+      <description>🔭 Amidst all the possibilities I see you 🌠
+ Once again, the user interface (UI) is improved. Now the available characters and maps are shown during selection, and players&amp;rsquo; control buttons are displayed on each screen.
+  The new version can be downloaded on itch.</description>
+    </item>
+    
+    <item>
+      <title>I See The Character In UI</title>
+      <link>https://azriel.im/will/2019/12/20/i-see-the-character-in-ui/</link>
+      <pubDate>Fri, 20 Dec 2019 00:36:01 +1300</pubDate>
+      <author>mail@azriel.im (Azriel Hoh)</author>
+      <guid>https://azriel.im/will/2019/12/20/i-see-the-character-in-ui/</guid>
+      <description>🤨 How did you come to be random?
+☑️ I had too many choices.
+ This update continues the work on the user interface, with a configuration defined character selection UI, and the beginning of the control settings UI.
+  The new version can be downloaded on itch.</description>
+    </item>
+    
+    <item>
+      <title>That Looks Good On UI</title>
+      <link>https://azriel.im/will/2019/11/08/that-looks-good-on-ui/</link>
+      <pubDate>Fri, 08 Nov 2019 06:50:26 +1300</pubDate>
+      <author>mail@azriel.im (Azriel Hoh)</author>
+      <guid>https://azriel.im/will/2019/11/08/that-looks-good-on-ui/</guid>
+      <description>📋 &amp;ldquo;I like the menu.&amp;rdquo;
+&amp;ldquo;Because it lets you choose?&amp;rdquo;
+🥺 &amp;ldquo;No, because it&amp;rsquo;s pretty.&amp;rdquo;
+ This update lays the foundation for better user interfaces (UIs) and menus.
+  What&amp;rsquo;s new:
+ Animated menus and backgrounds can be defined. Player names can be specified in controller configuration.</description>
+    </item>
+    
+    <item>
+      <title>Dev Time Optimization -- Part 1 (1.9x speedup, 65% less disk usage)</title>
+      <link>https://azriel.im/will/2019/10/08/dev-time-optimization-part-1-1.9x-speedup-65-less-disk-usage/</link>
+      <pubDate>Tue, 08 Oct 2019 13:10:38 +1300</pubDate>
+      <author>mail@azriel.im (Azriel Hoh)</author>
+      <guid>https://azriel.im/will/2019/10/08/dev-time-optimization-part-1-1.9x-speedup-65-less-disk-usage/</guid>
+      <description>Summary In a 45k LOC / 102-crate workspace, moving tests from member crates into a single workspace_tests crate achieved the following improvements:
+ Build and test duration in release mode reduced from 23 minutes to 13 minutes . Debug artifact disk usage reduced from 20 G to 7 G (65% reduction, fresh build), or 230 G to 50 G (78% reduction, ongoing development)  Background The rate of software development is affected by many limits.</description>
+    </item>
+    
+    <item>
+      <title>Focus!</title>
+      <link>https://azriel.im/will/2019/09/27/focus/</link>
+      <pubDate>Fri, 27 Sep 2019 06:50:26 +1300</pubDate>
+      <author>mail@azriel.im (Azriel Hoh)</author>
+      <guid>https://azriel.im/will/2019/09/27/focus/</guid>
+      <description>👁️ Eyes on me. Let&amp;rsquo;s go.
+ This update contains many improvements to game play and configuration.
+  What&amp;rsquo;s new:
+ Camera moves to track players, whilst staying within map bounds. Play sounds from object configuration. Spawn any kind of object, on any sequence.</description>
+    </item>
+    
+    <item>
+      <title>Charging Up</title>
+      <link>https://azriel.im/will/2019/08/16/charging-up/</link>
+      <pubDate>Fri, 16 Aug 2019 06:50:26 +1300</pubDate>
+      <author>mail@azriel.im (Azriel Hoh)</author>
+      <guid>https://azriel.im/will/2019/08/16/charging-up/</guid>
+      <description>🔋 We&amp;rsquo;re in for a long ride. Make sure you&amp;rsquo;re charged up.
+ In this update, characters can now charge up by holding the Attack button:
+  Behind the scenes, (most) sequence transitions based on control input have been made configurable.</description>
+    </item>
+    
+    <item>
+      <title>This Is Lit</title>
+      <link>https://azriel.im/will/2019/07/05/this-is-lit/</link>
+      <pubDate>Fri, 05 Jul 2019 22:33:14 +1300</pubDate>
+      <author>mail@azriel.im (Azriel Hoh)</author>
+      <guid>https://azriel.im/will/2019/07/05/this-is-lit/</guid>
+      <description>Don&amp;rsquo;t play with fire 🔥
+ This update adds support for spawning energy objects:
+  That is the only apparent change; other significant changes include:
+ Rendering has changed from OpenGL to Vulkan. Early support for teams. Object deletion at the end of a sequence.</description>
+    </item>
+    
+  </channel>
+</rss>

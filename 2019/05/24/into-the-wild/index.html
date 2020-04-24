@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Into The Wild - Will</title>
+  <meta name="description" content="⚙️ An automation engineer writes a game 👾
+🎮 Nobody plays it.
+ PSA: This update is the first with a public download. Currently it&rsquo;s pay what you want &ndash; there is minimal content, but this will grow over the year. I have also begun a Patreon.">
+  <meta name="author" content="Azriel Hoh"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Will",
+    
+    "url": "https:\/\/azriel.im\/will"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/azriel.im\/will"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/azriel.im\/will",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/azriel.im\/will\/2019\/05\/24\/into-the-wild\/",
+          "name": "Into the wild"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Azriel Hoh"
+  },
+  "headline": "Into The Wild",
+  "description" : "⚙️ An automation engineer writes a game 👾\n🎮 Nobody plays it.\n PSA: This update is the first with a public download. Currently it\x26rsquo;s pay what you want \x26ndash; there is minimal content, but this will grow over the year. I have also begun a Patreon.",
+  "inLanguage" : "en",
+  "wordCount":  932 ,
+  "datePublished" : "2019-05-24T17:33:58",
+  "dateModified" : "2019-05-24T17:33:58",
+  "image" : "https:\/\/azriel.im\/will\/media\/will_logo.png",
+  "keywords" : [ "development, release" ],
+  "mainEntityOfPage" : "https:\/\/azriel.im\/will\/2019\/05\/24\/into-the-wild\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/azriel.im\/will",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/azriel.im\/will\/media\/will_logo.png",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Into The Wild" />
+<meta property="og:description" content="⚙️ An automation engineer writes a game 👾
+🎮 Nobody plays it.
+ PSA: This update is the first with a public download. Currently it&rsquo;s pay what you want &ndash; there is minimal content, but this will grow over the year. I have also begun a Patreon.">
+<meta property="og:image" content="https://azriel.im/will/media/will_logo.png" />
+<meta property="og:url" content="https://azriel.im/will/2019/05/24/into-the-wild/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Will" />
+
+  <meta name="twitter:title" content="Into The Wild" />
+  <meta name="twitter:description" content="⚙️ An automation engineer writes a game 👾
+🎮 Nobody plays it.
+ PSA: This update is the first with a public download. Currently it&rsquo;s pay what you want &ndash; there is minimal content, but this …">
+  <meta name="twitter:image" content="https://azriel.im/will/media/will_logo.png" />
+  <meta name="twitter:card" content="summary" />
+  <link href='https://azriel.im/will/media/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.59.1" />
+  <link rel="alternate" href="https://azriel.im/will/index.xml" type="application/rss+xml" title="Will"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://azriel.im/will/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="https://azriel.im/will/css/syntax.css" /><link rel="stylesheet" href="https://azriel.im/will/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-122495090-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://azriel.im/will">Will</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Categories" href="https://azriel.im/will/categories">Categories</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="https://azriel.im/will/tags">Tags</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="https://azriel.im/will/about/">About</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="glyphicon glyphicon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="Will" href="https://azriel.im/will">
+            <img class="avatar-img" src="https://azriel.im/will/media/will_logo.png" alt="Will" />
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search Will</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>Into The Wild</h1>
+              
+              
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on 2019-05-24
+  
+  
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Azriel Hoh
+    
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<blockquote>
+<p>⚙️ An automation engineer writes a game 👾</p>
+
+<p>🎮 Nobody plays it.</p>
+</blockquote>
+
+<p><strong>PSA:</strong> <em>This update is the first with a <a href="https://azriel91.itch.io/will">public download</a>. Currently it&rsquo;s pay what you want &ndash; there is minimal content, but this will grow over the year. I have also begun a <a href="https://www.patreon.com/azriel91">Patreon</a>.</em></p>
+
+<p>In the past eight weeks, we&rsquo;ve added sound, hit interaction mechanics, control transitions, and UI improvements.</p>
+
+<p>Let&rsquo;s have a look:</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/9yx6fC1YtV8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<p>Here&rsquo;s the list of notable visible (and audible!) changes:</p>
+
+<ul>
+<li>UI includes instructions on how to navigate.</li>
+<li>UI sounds.</li>
+<li>Speed of the <code>jump</code> and <code>dash</code> sequences have been reduced.</li>
+<li>When a character hits another, a sound is played.</li>
+<li>When a character hits another, there is a small pause or <em>freeze frame</em>.</li>
+<li>HP bars are in the right place.</li>
+</ul>
+
+<p>Alongside that is the list of less visible changes. More detail is further in the post.</p>
+
+<ul>
+<li>Hit mechanics.</li>
+<li>Stun points.</li>
+<li>Configurable control transitions.</li>
+<li>Added an end user license agreement (EULA).</li>
+<li>Ship with default assets.</li>
+</ul>
+
+<h2 id="play">Play</h2>
+
+<h3 id="hit-mechanics">Hit Mechanics</h3>
+
+<p>The logic to determine when an attack hits a character is guarded by two mechanisms:</p>
+
+<ul>
+<li><p><strong>Hit Limit</strong></p>
+
+<p>The number of objects the attack may hit. This can be limited to:</p>
+
+<ul>
+<li><strong>A single object:</strong> For a simple attack such as a punch.</li>
+<li><strong>A fixed number of objects:</strong> For a medium-strength attack, like a limited area-of-effect spell.</li>
+<li><strong>Unlimited number of objects:</strong> For a strong attack, like an explosion.</li>
+</ul></li>
+
+<li><p><strong>Hit Repeat Delay</strong> (or <em>cooldown</em><sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>)</p>
+
+<p>Number of <em>ticks</em> that must pass before an attacker may hit the same object. In a 60 FPS game, if a character has an ongoing attack with a hit repeat delay of 10, it would hit the same object 6 times.</p>
+
+<p>The hit repeat delay is tracked separately for each object that is hit.</p></li>
+</ul>
+
+<h3 id="stun">Stun</h3>
+
+<p>Attacks can inflict stun points. When a character accumulates enough stun points, they go into the <code>dazed</code> sequence, where they cannot fend against further attacks. If a character is further attacked, they will fall even if they still have health points.</p>
+
+<p>Stun points reduce by 1 point per tick.</p>
+
+<h3 id="control-transitions">Control Transitions</h3>
+
+<p>Characters can now perform different moves (sequences) depending on whether you press, hold, or release an action key. This enables and distinguishes the following types of moves:</p>
+
+<ul>
+<li><strong>Regular moves:</strong> Press attack to punch, jump to jump.</li>
+<li><strong>Charged shot:</strong> Hold attack to charge, release to fire like Rockman / Megaman.</li>
+<li><strong>Lasers:</strong> Hold attack to continuously fire.</li>
+<li><strong>Defend:</strong> Hold defend to continuously guard.</li>
+</ul>
+
+<h2 id="create">Create</h2>
+
+<p>There are 4 new sequences, and one renamed sequence:</p>
+
+<ul>
+<li><code>stand_attack</code> has been renamed to <code>stand_attack_0</code>.</li>
+<li><code>stand_attack_1</code> is a second attack sequence.</li>
+<li><code>jump_attack</code> is added for attacking while jumping.</li>
+<li><code>dash_attack</code> is added for attacking while dashing.</li>
+<li><code>dazed</code> is used when a character is hit and has accumulated enough stun points.</li>
+</ul>
+
+<h3 id="configuration">Configuration</h3>
+
+<h4 id="interaction">Interaction</h4>
+
+<p>The way <code>interactions</code> are specified has changed to accomodate the new hit mechanics. For a normal hit, the following snippet will tend to do want you expect:</p>
+
+<div class="highlight"><div style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[[sequences.stand_attack_0.frames.interactions]]
+  hit = { hp_damage = <span style="color:#0086f7;font-weight:bold">5</span> }
+  bounds = [{ box = { x = <span style="color:#0086f7;font-weight:bold">50</span>, y = <span style="color:#0086f7;font-weight:bold">32</span>, w = <span style="color:#0086f7;font-weight:bold">17</span>, h = <span style="color:#0086f7;font-weight:bold">18</span> } }]</code></pre></td></tr></table>
+</div>
+</div>
+
+<p>The following shows all of the values that can be specified for a hit interaction:</p>
+
+<div class="highlight"><div style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[[sequences.stand_attack_0.frames.interactions]]
+  bounds = [{ box = { x = <span style="color:#0086f7;font-weight:bold">50</span>, y = <span style="color:#0086f7;font-weight:bold">32</span>, w = <span style="color:#0086f7;font-weight:bold">17</span>, h = <span style="color:#0086f7;font-weight:bold">18</span> } }]
+
+  [sequences.stand_attack_0.frames.interactions.hit]
+    <span style="color:#080;background-color:#0f140f;font-style:italic"># Default: 1. May also be &#34;unlimited&#34;.</span>
+    hit_limit = <span style="color:#0086f7;font-weight:bold">3</span>
+
+    <span style="color:#080;background-color:#0f140f;font-style:italic"># Default: 10 ticks.</span>
+    repeat_delay = <span style="color:#0086f7;font-weight:bold">20</span>
+
+    <span style="color:#080;background-color:#0f140f;font-style:italic"># Default: 0 health points.</span>
+    hp_damage = <span style="color:#0086f7;font-weight:bold">5</span>
+
+    <span style="color:#080;background-color:#0f140f;font-style:italic"># Default:  0 skill points.</span>
+    sp_damage = <span style="color:#0086f7;font-weight:bold">5</span>
+
+    <span style="color:#080;background-color:#0f140f;font-style:italic"># Default: 30 stun points.</span>
+    <span style="color:#080;background-color:#0f140f;font-style:italic">#</span>
+    <span style="color:#080;background-color:#0f140f;font-style:italic"># When a character is hit, transitions to the</span>
+    <span style="color:#080;background-color:#0f140f;font-style:italic"># following sequences if sufficient stun points:</span>
+    <span style="color:#080;background-color:#0f140f;font-style:italic">#</span>
+    <span style="color:#080;background-color:#0f140f;font-style:italic"># Below  40:   `flinch_0`</span>
+    <span style="color:#080;background-color:#0f140f;font-style:italic"># Below  80:   `flinch_1`</span>
+    <span style="color:#080;background-color:#0f140f;font-style:italic"># Below 120:   `dazed`</span>
+    <span style="color:#080;background-color:#0f140f;font-style:italic"># 120 or more: `fall_forward_ascend`</span>
+    stun = <span style="color:#0086f7;font-weight:bold">50</span></code></pre></td></tr></table>
+</div>
+</div>
+
+<h4 id="control-transitions-1">Control Transitions</h4>
+
+<p>In character configuration, . The following snippet of a frame in the <code>stand</code> sequence shows the configuration to transition to <code>stand_attack_0</code> when <code>Attack</code> is pressed, or <code>jump</code> when <code>Jump</code> is pressed:</p>
+
+<div class="highlight"><div style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[sequences.stand]
+  [[sequences.stand.frames]]
+    <span style="color:#080;background-color:#0f140f;font-style:italic"># ..</span>
+
+    [[sequences.stand.frames.transitions]]
+      press_attack = <span style="color:#0086d2">&#34;stand_attack_0&#34;</span>
+      press_jump = <span style="color:#0086d2">&#34;jump&#34;</span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>For <em>hold</em> and <em>release</em> transitions, the <code>hold_&lt;button&gt;</code> and <code>release_&lt;button&gt;</code> fields are used to specify what sequence to switch to when the button is held or released on that frame:</p>
+
+<div class="highlight"><div style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[sequences.stand]
+  [[sequences.stand.frames]]
+    <span style="color:#080;background-color:#0f140f;font-style:italic"># ..</span>
+
+    [[sequences.stand.frames.transitions]]
+      press_attack = <span style="color:#0086d2">&#34;stand_attack_0&#34;</span>
+      press_jump = <span style="color:#0086d2">&#34;jump&#34;</span>
+      hold_defend = <span style="color:#0086d2">&#34;..&#34;</span>    <span style="color:#080;background-color:#0f140f;font-style:italic"># defend -- to be done.</span>
+      release_attack = <span style="color:#0086d2">&#34;..&#34;</span> <span style="color:#080;background-color:#0f140f;font-style:italic"># charge_shot -- to be done.</span></code></pre></td></tr></table>
+</div>
+</div>
+
+<p>Currently, because control transitions are specified per <em>frame</em>, if you have 4 standing frames, you have to copy and paste the transitions to all frames. In a later version, common transitions can be specified at the sequence level.</p>
+
+<h3 id="spriting">Spriting</h3>
+
+<p>
+<link rel="stylesheet" href="https://azriel.im/will/css/hugo-easy-gallery.css" />
+<div class="box fancy-figure caption-position-bottom caption-effect-fade" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="https://azriel.im/will/media/2019-05-24_into_the_wild/heat_stand_attack.png" alt="Stand attack"/>
+    </div>
+    <a href="https://azriel.im/will/media/2019-05-24_into_the_wild/heat_stand_attack.png" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>Stand attack</p>
+      </figcaption>
+  </figure>
+</div>
+<br />
+
+
+<div class="box fancy-figure caption-position-bottom caption-effect-fade" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="https://azriel.im/will/media/2019-05-24_into_the_wild/heat_jump_attack.png" alt="Jump attack"/>
+    </div>
+    <a href="https://azriel.im/will/media/2019-05-24_into_the_wild/heat_jump_attack.png" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>Jump attack</p>
+      </figcaption>
+  </figure>
+</div>
+<br />
+
+
+<div class="box fancy-figure caption-position-bottom caption-effect-fade" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="https://azriel.im/will/media/2019-05-24_into_the_wild/heat_dash_attack.png" alt="Dash attack"/>
+    </div>
+    <a href="https://azriel.im/will/media/2019-05-24_into_the_wild/heat_dash_attack.png" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>Dash attack</p>
+      </figcaption>
+  </figure>
+</div>
+<br />
+
+
+<div class="box fancy-figure caption-position-bottom caption-effect-fade" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="https://azriel.im/will/media/2019-05-24_into_the_wild/heat_dazed.png" alt="Dazed"/>
+    </div>
+    <a href="https://azriel.im/will/media/2019-05-24_into_the_wild/heat_dazed.png" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>Dazed</p>
+      </figcaption>
+  </figure>
+</div>
+</p>
+
+<p>There are now two sequences for stand attack to make the movement appear more natural, and characters can now attack while jumping and dashing.</p>
+
+<p>Finally, the <code>dazed</code> sequence is when the character has been hit multiple times, and is <em>dazed</em> from the attack.</p>
+
+<h2 id="what-s-next">What&rsquo;s Next</h2>
+
+<p>The next release will be a maintenance release to allow arbitrarily named sequences to be used in configuration. I&rsquo;ll also try to work on the ability to spawn objects in game, and specifying acceleration values in object configuration.</p>
+
+<h2 id="support-me">Support Me</h2>
+
+<p>The game is still in an early stage, but if you would like to support me, please consider becoming a <a href="https://www.patreon.com/azriel91">Patreon</a>.</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">The word &ldquo;cooldown&rdquo; will likely be used in the future for skill execution delays.
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://azriel.im/will/tags/development/">development</a>&nbsp;
+            
+              <a href="https://azriel.im/will/tags/release/">release</a>&nbsp;
+            
+          </div>
+        
+
+        
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://azriel.im/will/2019/03/29/dash/" data-toggle="tooltip" data-placement="top" title="Dash">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://azriel.im/will/2019/07/05/this-is-lit/" data-toggle="tooltip" data-placement="top" title="This Is Lit">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:mail@azriel.im" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/azriel91" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://azriel.im/">Azriel Hoh</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2020
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://azriel.im/will">Will</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.59.1</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://azriel.im/will/js/main.js"></script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://azriel.im/will/js/load-photoswipe.js"></script>
+
+
+
+<script>
+  (function() {
+    var cx = '001170321302850785855:ikbend5xmbo';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+

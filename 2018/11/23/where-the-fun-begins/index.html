@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Where The Fun Begins - Will</title>
+  <meta name="description" content="When your face aligned with my fist, did you feel the connection? 👊
+ Collision has arrived! Right now only cuboid-cuboid intersection is implemented, but it demonstrates the concept.
+Let&rsquo;s have a look:
+  Play What&rsquo;s new:
+ Collision detection and reaction.">
+  <meta name="author" content="Azriel Hoh"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Will",
+    
+    "url": "https:\/\/azriel.im\/will"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/azriel.im\/will"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/azriel.im\/will",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/azriel.im\/will\/2018\/11\/23\/where-the-fun-begins\/",
+          "name": "Where the fun begins"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Azriel Hoh"
+  },
+  "headline": "Where The Fun Begins",
+  "description" : "When your face aligned with my fist, did you feel the connection? 👊\n Collision has arrived! Right now only cuboid-cuboid intersection is implemented, but it demonstrates the concept.\nLet\x26rsquo;s have a look:\n  Play What\x26rsquo;s new:\n Collision detection and reaction.",
+  "inLanguage" : "en",
+  "wordCount":  555 ,
+  "datePublished" : "2018-11-23T06:01:13",
+  "dateModified" : "2018-11-23T06:01:13",
+  "image" : "https:\/\/azriel.im\/will\/media\/will_logo.png",
+  "keywords" : [ "development" ],
+  "mainEntityOfPage" : "https:\/\/azriel.im\/will\/2018\/11\/23\/where-the-fun-begins\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/azriel.im\/will",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/azriel.im\/will\/media\/will_logo.png",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Where The Fun Begins" />
+<meta property="og:description" content="When your face aligned with my fist, did you feel the connection? 👊
+ Collision has arrived! Right now only cuboid-cuboid intersection is implemented, but it demonstrates the concept.
+Let&rsquo;s have a look:
+  Play What&rsquo;s new:
+ Collision detection and reaction.">
+<meta property="og:image" content="https://azriel.im/will/media/will_logo.png" />
+<meta property="og:url" content="https://azriel.im/will/2018/11/23/where-the-fun-begins/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Will" />
+
+  <meta name="twitter:title" content="Where The Fun Begins" />
+  <meta name="twitter:description" content="When your face aligned with my fist, did you feel the connection? 👊
+ Collision has arrived! Right now only cuboid-cuboid intersection is implemented, but it demonstrates the concept.
+Let&rsquo;s have …">
+  <meta name="twitter:image" content="https://azriel.im/will/media/will_logo.png" />
+  <meta name="twitter:card" content="summary" />
+  <link href='https://azriel.im/will/media/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.59.1" />
+  <link rel="alternate" href="https://azriel.im/will/index.xml" type="application/rss+xml" title="Will"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://azriel.im/will/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="https://azriel.im/will/css/syntax.css" /><link rel="stylesheet" href="https://azriel.im/will/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-122495090-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://azriel.im/will">Will</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Categories" href="https://azriel.im/will/categories">Categories</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="https://azriel.im/will/tags">Tags</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="https://azriel.im/will/about/">About</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="glyphicon glyphicon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="Will" href="https://azriel.im/will">
+            <img class="avatar-img" src="https://azriel.im/will/media/will_logo.png" alt="Will" />
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search Will</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>Where The Fun Begins</h1>
+              
+              
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on 2018-11-23
+  
+  
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Azriel Hoh
+    
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<blockquote>
+<p>When your face aligned with my fist, did you feel the connection? 👊</p>
+</blockquote>
+
+<p>Collision has arrived! Right now only cuboid-cuboid intersection is implemented, but it demonstrates the concept.</p>
+
+<p>Let&rsquo;s have a look:</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/q0YSfNZSNqU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<h2 id="play">Play</h2>
+
+<p>What&rsquo;s new:</p>
+
+<ul>
+<li>Collision detection and reaction.</li>
+<li>Character health points (HP).</li>
+<li>Winning condition &ndash; last person standing wins.</li>
+</ul>
+
+<p>Finally we can <em>play</em>.</p>
+
+<h2 id="create">Create</h2>
+
+<p>As with every new feature, we need configuration and artwork to make it look good.</p>
+
+<p>When an object is hit, we need to give it a hurt animation. For characters, there are 6 new sequences:</p>
+
+<ul>
+<li><code>flinch_0</code>: Sequence when hit.</li>
+<li><code>flinch_1</code>: Alternative sequence when hit.</li>
+<li><code>fall_forward_ascend</code>: Falling, but vertical movement is upwards.</li>
+<li><code>fall_forward_descend</code>: Falling, vertical movement is downwards.</li>
+<li><code>fall_forward_land</code>: Character has hit the ground.</li>
+<li><code>lie_face_down</code>: Character is lying on the ground.</li>
+</ul>
+
+<p>The following sprite sheet shows the sprites used in these sequences:</p>
+
+
+<link rel="stylesheet" href="https://azriel.im/will/css/hugo-easy-gallery.css" />
+<div class="box fancy-figure caption-position-bottom caption-effect-fade" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="https://azriel.im/will/media/2018-11-23_where_the_fun_begins/heat_interaction.png" alt="Sprites used when a character is hit."/>
+    </div>
+    <a href="https://azriel.im/will/media/2018-11-23_where_the_fun_begins/heat_interaction.png" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>heat_interaction.png</p>
+      </figcaption>
+  </figure>
+</div>
+
+
+<p>The corresponding object configuration is as follows:</p>
+
+<div class="highlight"><div style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#080;background-color:#0f140f;font-style:italic"># Flinch when character is hit.</span>
+<span style="color:#080;background-color:#0f140f;font-style:italic">#</span>
+<span style="color:#080;background-color:#0f140f;font-style:italic"># * `flinch_0`: Got hit when on ground.</span>
+<span style="color:#080;background-color:#0f140f;font-style:italic"># * `flinch_1`: Got hit when on ground - alternate sequence.</span>
+[sequences.flinch_0]
+  frames = [
+    { sheet = <span style="color:#0086f7;font-weight:bold">3</span>, sprite = <span style="color:#0086f7;font-weight:bold">24</span>, wait = <span style="color:#0086f7;font-weight:bold">2</span>, body = [ .. ] },
+    { sheet = <span style="color:#0086f7;font-weight:bold">3</span>, sprite = <span style="color:#0086f7;font-weight:bold">25</span>, wait = <span style="color:#0086f7;font-weight:bold">2</span>, body = [ .. ] },
+    { sheet = <span style="color:#0086f7;font-weight:bold">3</span>, sprite = <span style="color:#0086f7;font-weight:bold">24</span>, wait = <span style="color:#0086f7;font-weight:bold">2</span>, body = [ .. ] },
+  ]
+
+[sequences.flinch_1]
+  frames = [
+    { sheet = <span style="color:#0086f7;font-weight:bold">3</span>, sprite = <span style="color:#0086f7;font-weight:bold">26</span>, wait = <span style="color:#0086f7;font-weight:bold">2</span>, body = [ .. ] },
+    { sheet = <span style="color:#0086f7;font-weight:bold">3</span>, sprite = <span style="color:#0086f7;font-weight:bold">27</span>, wait = <span style="color:#0086f7;font-weight:bold">2</span>, body = [ .. ] },
+    { sheet = <span style="color:#0086f7;font-weight:bold">3</span>, sprite = <span style="color:#0086f7;font-weight:bold">26</span>, wait = <span style="color:#0086f7;font-weight:bold">2</span>, body = [ .. ] },
+  ]
+
+<span style="color:#080;background-color:#0f140f;font-style:italic"># Fall when knocked down.</span>
+[sequences.fall_forward_ascend]
+  frames = [
+    { sheet = <span style="color:#0086f7;font-weight:bold">3</span>, sprite = <span style="color:#0086f7;font-weight:bold">6</span>, wait = <span style="color:#0086f7;font-weight:bold">2</span> },
+  ]
+
+[sequences.fall_forward_descend]
+  frames = [
+    { sheet = <span style="color:#0086f7;font-weight:bold">3</span>, sprite = <span style="color:#0086f7;font-weight:bold">7</span>, wait = <span style="color:#0086f7;font-weight:bold">3</span> },
+    { sheet = <span style="color:#0086f7;font-weight:bold">3</span>, sprite = <span style="color:#0086f7;font-weight:bold">8</span>, wait = <span style="color:#0086f7;font-weight:bold">4</span> },
+    { sheet = <span style="color:#0086f7;font-weight:bold">3</span>, sprite = <span style="color:#0086f7;font-weight:bold">9</span>, wait = <span style="color:#0086f7;font-weight:bold">2</span> },
+  ]
+
+[sequences.fall_forward_land]
+  frames = [
+    { sheet = <span style="color:#0086f7;font-weight:bold">3</span>, sprite = <span style="color:#0086f7;font-weight:bold">10</span>, wait = <span style="color:#0086f7;font-weight:bold">2</span> },
+    { sheet = <span style="color:#0086f7;font-weight:bold">3</span>, sprite = <span style="color:#0086f7;font-weight:bold">11</span>, wait = <span style="color:#0086f7;font-weight:bold">2</span> },
+  ]
+
+[sequences.lie_face_down]
+  frames = [
+    { sheet = <span style="color:#0086f7;font-weight:bold">3</span>, sprite = <span style="color:#0086f7;font-weight:bold">10</span>, wait = <span style="color:#0086f7;font-weight:bold">30</span> },
+  ]</code></pre></td></tr></table>
+</div>
+</div>
+
+<h2 id="what-s-next">What&rsquo;s Next</h2>
+
+<p>This update doesn&rsquo;t have that many feature changes, and this will be the case for the next one or two updates &ndash; there is a lot of maintenance and behind-the-scenes work to allow for faster development in the future. Planned features include:</p>
+
+<ul>
+<li><strong>Collision shapes:</strong> Collision zones defined as spheres, cylinders, and other shapes.</li>
+<li><strong>Dynamic interaction:</strong> Characters become dizzy after being hit a number of times.</li>
+<li><strong>Additional sequences:</strong> Jump while running, attack while jumping, etcetera.</li>
+<li><strong>Better Menu:</strong> The current one doesn&rsquo;t show what state it&rsquo;s in, or what to do.</li>
+</ul>
+
+<p><em>But</em>, before we can get to that, these things must be done:</p>
+
+<ul>
+<li>Reorganize runtime data and logic.</li>
+<li>Rewrite asset loading.</li>
+<li>Use physics library for optimized collision detection.</li>
+<li>Automate collision tests.</li>
+</ul>
+
+<p>The fun is just beginning; and it&rsquo;s a long way to the end.</p>
+
+<p>Peace ✌!</p>
+
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://azriel.im/will/tags/development/">development</a>&nbsp;
+            
+          </div>
+        
+
+        
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://azriel.im/will/2018/10/12/again/" data-toggle="tooltip" data-placement="top" title="Again">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://azriel.im/will/2018/12/18/intermission/" data-toggle="tooltip" data-placement="top" title="Intermission">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:mail@azriel.im" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/azriel91" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://azriel.im/">Azriel Hoh</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2020
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://azriel.im/will">Will</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.59.1</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://azriel.im/will/js/main.js"></script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://azriel.im/will/js/load-photoswipe.js"></script>
+
+
+
+<script>
+  (function() {
+    var cx = '001170321302850785855:ikbend5xmbo';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+
